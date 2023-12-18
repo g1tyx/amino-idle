@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Amino Idle</title>
-    <link rel="icon" href="https://devjon.com/amino/img/solara.ico" type="image/x-icon">
+    <link rel="icon" href="solara.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
+    <script src="chs.js"></script>
+    <script src="core.js"></script>
     <div id="viewButtons">
       <button id="cellViewButton" onclick="switchView('cell')">Cell View</button>
       <button id="discoveryViewButton" onclick="switchView('discovery')" disabled>Discovery View</button>
@@ -244,8 +246,8 @@
     </div>
     <div id="story"></div>
     <button id="unhideStory" style="display:none;">Unhide</button>
-    <script src="https://cdn.jsdelivr.net/npm/tone@14.8.30/build/Tone.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tone/14.8.30/Tone.min.js"></script>
+    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/lz-string/1.4.4/lz-string.min.js"></script>
     <script src="classes.js"></script>
     <script src="config.js"></script>
     <script src="story.js"></script>
@@ -280,6 +282,23 @@
       <div class="direction" id="south"></div>
       <div class="direction" id="west"></div>
       <div class="center-circle"></div>
+    </div>
+<!--客服 开始-->
+<script src="//g8hh.github.io/static/js/jquery.min.js"></script>
+<link rel="stylesheet" href="//g8hh.github.io/static/css/kf.css" type="text/css" media="screen" charset="utf-8">
+<script src="//g8hh.github.io/static/js/kf.js"></script>
+<!-- 客服 结束 -->
+<!--站长统计--> 
+<div style="display: none">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?028b1b5f659ed138230f4cafd7ad0dfc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
     </div>
   </body>
   </html>
