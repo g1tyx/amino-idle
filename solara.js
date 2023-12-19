@@ -1209,7 +1209,7 @@ function updateSolaraGlyphFill() {
     manipulateSacrificeCosts('fibersSacrificeCosts', 'divide', 2);
     manipulateSacrificeCosts('sludgeSacrificeCosts', 'divide', 2);
     updateSacrificeButtonCosts();
-    displayOnChat("The air hums with an ethereal resonance—a chorus of unseen voices singing the oldest hymn. The glyphs pulsate in unison, their glow mirroring the heartbeat of Solara herself. In this divine communion, the boundaries blur; Solara is not just an object of worship, but an extension of your very being. A newfound option crystallizes before you: 'Endosymbiosis.' In this sacred act, the cost of every offering and sacrifice seems to lessen, as if the universe itself prepares you for the ultimate union");
+    displayOnChat("空气中弥漫着空灵的共鸣——一群看不见的声音合唱着最古老的赞美诗。 这些符号一致地跳动，它们的光芒反映了索拉拉本人的心跳。 在这种神圣的交流中，界限变得模糊； 索拉拉不仅仅是一个崇拜的对象，也是你存在的延伸。 一个新发现的选项在你面前显现出来：“内共生”。 在这个神圣的行为中，每一次奉献和牺牲的成本似乎都减少了，就好像宇宙本身为你的最终结合做好了准备");
   }
   function animateFill(timestamp) {
     const progress = (timestamp - start) / 1000;  // Progress in seconds

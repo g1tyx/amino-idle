@@ -975,11 +975,11 @@ function triggerCaveSetbackEvent(totalSetback = 6000) { // 6000 default will tra
     caveExcavationProgress -= appliedSetback;
     console.log("DEBUG: progress post-setback:"+caveExcavationProgress);
     // Display a message to the player about the setback event
-    displayOnChat("The depths of the cave revolt against your intrusion. As walls crumble and pathways are blocked, it feels as though the very earth is grieving your presence, urging you to retreat. The darkness that once held promise now feels oppressive, swallowing hopes of discovery. Yet within this desolate moment, there's a lesson about the fragile balance of existence and the quiet tenacity needed to pierce through the heart of adversity. With each setback, the journey becomes a testament to resilience, a quiet ode to the persistence of life in the face of overwhelming odds.");
+    displayOnChat("洞穴深处反抗着你的入侵。 当墙壁倒塌、道路被堵塞时，感觉就像大地正在为你的存在而悲伤，敦促你撤退。 曾经充满希望的黑暗现在感到压抑，吞噬着发现的希望。 然而，在这个荒凉的时刻，我们学到了生存的脆弱平衡和穿透逆境核心所需的安静坚韧的教训。 每一次挫折，这段旅程都成为韧性的证明，是对面对巨大困难时坚持不懈的生命的安静颂歌。");
     triggerSetbackEffect();
     setTimeout(function() {
     if (!shownSoulModals.includes('soulModal_caveSetback')) {
-        const prompt = "As the cave's walls crumble, so do many of your loyal excavators. Their loss, echoing through the chambers, amplifies the weight of despair you feel. In the grip of this double tragedy—the resistance of the cave and the loss of your extensions—what emotion tugs at the core of your being?";
+        const prompt = "随着洞穴的墙壁倒塌，许多忠实的挖掘者也会倒塌。 他们的离去，在房间里回响，放大了你感受到的绝望的沉重。 在这个双重悲剧的控制下——洞穴的阻力和你的延伸的丧失——什么情感牵引着你存在的核心？";
         const choices = [
             {
                 trait: 'Loneliness',

@@ -1839,8 +1839,8 @@ function explore(x, y) {
                 unlockAchievement(17); 
                 addToResearchQueue('HydrologicCycle');
                 console.log("the oasis was discovered...")
-                displayOnChat("You discover a pocket of life amidst desolation. You're struck by the paradox. The waters are a sonnet to your being, whispering that even beauty can flourish in the throes of despair. But the oasis is just that—a fleeting respite, emphasizing the pervasive loneliness that surrounds it.");
-                displayOnChat("The solace of the oasis imbues you with a newfound vigor. The simple act of finding this haven against all odds fills you with a subtle, yet permanent, sense of resilience. Your resource gains are increased by 2%, a modest but eternal gift.", type='hint');
+                displayOnChat("你在荒凉中发现了生命的一小部分。 你对这个悖论感到震惊。 水对你来说是一首十四行诗，低语着即使是美丽也能在绝望的痛苦中绽放。 但绿洲就是这样——一个短暂的喘息机会，强调了它周围普遍存在的孤独感。");
+                displayOnChat("绿洲的慰藉为您注入新的活力。 克服一切困难找到这个避风港的简单举动会让你充满微妙但永久的韧性。 你的资源收益增加 2%，一份微不足道但永恒的礼物.", type='hint');
                 nourishmentMultiplier += 0.02;
                 informationMultiplier += 0.02;
                 warmthMultiplier += 0.02;
@@ -1879,21 +1879,21 @@ function explore(x, y) {
                 console.log("solara was found...");
                 postrenderSolara(x - 12, y - 11); // draw SVG solara
                 unlockAchievement(2); // Fall in love
-                displayOnChat("As you navigate the barren landscape, a burst of color punctuates the monochrome horizon—a vibrant shade that mirrors your own hue. Intrigued, you cautiously approach the spectacle, discovering a lone sentinel crowned with an ethereal blossom. You feel a gentle pull, almost magnetic, inviting you to explore the enigma before you. Even at this distance, a newfound warmth seeps into your core. Could this fleeting sensation be a precursor to something deeper?");
+                displayOnChat("当您在贫瘠的土地上航行时，单色地平线上会出现一抹色彩——一种充满活力的色调，反映出您自己的色调。 出于好奇，你小心翼翼地接近这一奇观，发现了一个戴着空灵花朵的孤独哨兵。 你会感觉到一种温柔的拉力，几乎是磁性的，邀请你去探索面前的谜团。 即使相隔这么远，一种新发现的温暖也会渗入你的内心。 这种转瞬即逝的感觉是否是更深层次事物的前兆？");
             } else if (tileDecoration.type === 'ice_cave') {
                 icecaveDiscovered = true;
                 unlockAchievement(15);
                 postrenderIceCave(x - 15, y - 15); // draw SVG cave
                 console.log("the ice cave was found...");
                 enableViewSwitchIfAppropriate(); // unblocks the cave view
-                decorationstory = "You sense an intriguing anomaly, a sudden drop in temperature and a whisper of hidden depths beckoning. Curiosity piqued, you find your way into an opening — a cave. As you venture into the frigid depths of the cave, a palpable stillness takes hold, as though time itself has frozen over. The cave resonates with an ageless hush, as if guarding secrets older than the world itself. Before you lies a gargantuan wall of ice, imposing and impassable, crystallized like the unyielding resolve of ancient spirits. It stands not only as a physical barrier but as a metaphoric testament to the trials that await."
+                decorationstory = "你感觉到一种有趣的异常现象，温度突然下降，还有隐藏深处的低语在召唤。 好奇心被激发，你找到了一个入口——一个洞穴。 当你冒险进入寒冷的洞穴深处时，一种明显的寂静笼罩着你，仿佛时间本身已经冻结了。 洞穴里弥漫着永恒的寂静，仿佛守护着比世界本身更古老的秘密。 在你面前的是一座巨大的冰墙，气势磅礴且无法逾越，就像古代灵魂不屈的决心一样结晶。 它不仅是一个物理屏障，也是对即将到来的考验的隐喻证明。"
                 displayOnChat(decorationstory);
             } else if (tileDecoration.type === 'fungi') {
                 firstfungusdiscovery = true;
                 unlockAchievement(21);
                 console.log("Fungi discovered...")
                 postrenderFungi(x - 8, y - 10); // draw SVG shroom
-                displayOnChat("As you traverse the familiar terrain, a patch of strange, vibrant growth catches your attention. It's unlike anything you've seen, a network of tendrils that stretch across the soil and occasionally spring forth with colorful caps. A subtle undercurrent of energy emanates from it, as if inviting you closer. The presence of this complex organism beckons further exploration and, perhaps, a deeper understanding of life's interconnectedness.");
+                displayOnChat("当你穿越熟悉的地形时，一片奇怪的、生机勃勃的植物引起了你的注意。 它与你所见过的任何东西都不同，它是一个遍布土壤的卷须网络，偶尔会长出彩色的帽子。 一股微妙的暗流从其中散发出来，仿佛在邀请你靠近。 这种复杂有机体的存在召唤着进一步的探索，或许还需要对生命的相互联系有更深入的了解。");
             } else if (tileDecoration.type === 'crystal') {
                 console.log("triggering post-render crystal");
                 postrenderCrystal(x - 13, y - 13); // draw SVG crystal

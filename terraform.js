@@ -799,31 +799,31 @@ function analyseDecs(anomalyType) {
   if (anomalyType === 'solara' && !solaraAnalysed) {
     solaraAnalysed = true;
     unlockSolaraTab();
-    displayOnChat("A distinct warmth touches your senses. Tentatively, you extend your newly formed tendons, seeking the origin. Before you stands a lone cactus, proudly bearing a radiant flower, its color echoing yours. An inexplicable connection tugs at you, drawing you closer. Touching its delicate petals, a wave of shared energy engulfs you. It's something you've never felt before—a deep bond, a mutual understanding. In this moment, you feel less isolated. A soft whisper from the very core of your being dubs her 'Solara'. She, the luminous oasis in your desolate world, becomes the poignant reminder of all that's missing, yet all that you cherish.");
+    displayOnChat("一种独特的温暖触动你的感官。 你尝试着伸展新形成的肌腱，寻找起源。 在你面前矗立着一棵孤独的仙人掌，骄傲地开着一朵光芒四射的花朵，它的颜色与你的颜色相呼应。 一种莫名其妙的联系牵引着你，让你们更加亲近。 触摸它精致的花瓣，一股共享能量的浪潮将您吞没。 这是你以前从未感受过的——深厚的联系、相互的理解。 这一刻，你不再感到孤立。 从你内心发出的轻柔的低语称她为“索拉拉”。 她，你荒凉世界中的发光绿洲，令人心酸地提醒你，你所缺少的一切，却又是你所珍惜的一切。");
   }
   if (anomalyType === 'river' && !riverAnalysed) {
     riverAnalysed = true;
     researchQueue.push('AutoConstructiveSynapses'); // enables cave highway auto-construction
     console.log("Auto Constructive Synapses research pushed to queue");
     populateResearchTab();
-    displayOnChat("Guided by the river's timeless wisdom, you uncover nature's secret blueprint. Its gentle currents, meandering yet deliberate, mirror a greater truth: pathways can emerge from intuition, not just intent. The tendrils of understanding reach deeper, unlocking the art of self-forming conduits. As the river carves landscapes, so too will your synapses shape the unseen realms.");
-    displayOnChat("Auto-Constructive Synapses Research now available.", "hint");
+    displayOnChat("在河流永恒智慧的指引下，您将揭开大自然的秘密蓝图。 它柔和的水流，蜿蜒而深思熟虑，反映了一个更大的真理：路径可以从直觉中出现，而不仅仅是意图。 理解的触须伸得更深，解锁了自我形成管道的艺术。 正如河流雕刻着风景一样，你的突触也会塑造出看不见的领域。");
+    displayOnChat("自动构造突触研究现已推出。", "hint");
   }
   if (anomalyType === 'fungi' && !fungusAnalysed) {
     fungusAnalysed = true;
     addToResearchQueue('MycorrhizalNetwork');
     addToResearchQueue('SporeDispersalMechanics');
     populateResearchTab();
-    displayOnChat("As you intertwine with the mysterious fungus, the aura of ancient wisdom envelops you. The web of mycelial threads beneath your core pulses in symbiotic harmony, sharing invaluable secrets of communal growth and wide-reaching influence. The invisible web of life expands, casting a hopeful shadow. Here, in this clandestine world of spores and hyphae, you discover means to reach farther and connect deeper.");
-    displayOnChat("Mycorrhizal Network and Spore Dispersal Mechanics Research have become available.", "hint");
+    displayOnChat("当你与神秘的真菌交织在一起时，古老智慧的光环笼罩着你。 菌丝网在您的核心脉搏下和谐共生，分享共同成长和广泛影响的宝贵秘密。 无形的生命之网不断扩张，投下充满希望的阴影。 在这里，在这个充满孢子和菌丝的秘密世界中，你会发现到达更远、联系更深的方法。");
+    displayOnChat("菌根网络和孢子传播力学研究已经可用。", "hint");
   }
   if (anomalyType === 'ice_cave' && !iceCaveAnalysed) {
     iceCaveAnalysed = true;
     checkForThermogenicResonance();
     if (volcanoDiscovered) {
-      displayOnChat("Analysing the ice cave, you sense a cryptic energy, as if two worlds were meeting—extreme cold and intense heat. Subtly, your form resonates with the oscillating frequencies. The understanding comes as a revelation: you can harness the complementary powers of ice and fire to unlock research into thermogenic resonance. A flash of insight expands your consciousness, as your evolution leaps into new, untapped realms.");
+      displayOnChat("分析冰洞，你会感受到一种神秘的能量，仿佛两个世界正在相遇——极冷和酷热。 巧妙地，您的形态与振荡频率产生共鸣。 这种理解是一种启示：你可以利用冰与火的互补力量来解锁热共振研究。 当你的进化跃入新的、未开发的领域时，灵光乍现会扩展你的意识。");
     } else {
-      displayOnChat("Inside the ice cave, you feel a quiet energy tinged with something... warmer. A latent potential lurks within you, whispering secrets of thermal mastery. However, the pieces of the puzzle remain incomplete. Your instincts tell you a hotter counterpart exists—a force to balance the yin and yang of thermal energies. Until then, the promise of further research waits in dormant anticipation.");
+      displayOnChat("在冰洞里，你会感受到一股安静的能量，带着某种……温暖的味道。 你体内潜藏着潜在的潜力，低声诉说着热力掌握的秘密。 然而，拼图的各个部分仍然不完整。 你的直觉告诉你存在一个更热的对应物——一种平衡热能阴阳的力量。 在那之前，进一步研究的希望仍在等待中。");
     }
   }
   if (anomalyType === 'pebble' && !pebblesAnalysed) {
@@ -831,23 +831,23 @@ function analyseDecs(anomalyType) {
     applyTemporaryMultiplier('information', 1, 5 * 60 * 1000);  
     applyTemporaryMultiplier('energy', 1, 5 * 120 * 1000);
     applyTemporaryMultiplier('warmth', 1, 5 * 60 * 1000);
-    displayOnChat("As you complete the analysis of the last pebble, a moment of clarity washes over you. Each pebble, once a fragment of existence, now resonates as a wellspring of potential. With newfound knowledge, the energy within you surges, radiating a warmth that seeps into every fiber of your being. The universe, once indifferent, now feels a little more connected. Your rate of gathering Information, Energy, and Warmth shall increase for a while, as a testament to your quest for understanding.");
+    displayOnChat("当您完成对最后一块鹅卵石的分析时，您的脑海中瞬间清晰起来。 每一颗鹅卵石，曾经是存在的碎片，现在都作为潜力的源泉产生共鸣。 有了新发现的知识，你体内的能量就会涌动，散发出一种温暖，渗透到你存在的每一根纤维中。 曾经冷漠的宇宙，现在变得更加紧密相连。 你收集信息、能量和温暖的速度将会暂时增加，作为你对理解的追求的证明。");
   } 
   if (anomalyType === 'wave' && !wavesAnalysed) {
     wavesAnalysed = true;
     applyTemporaryMultiplier('information', 1, 5 * 60 * 1000);  
     applyTemporaryMultiplier('energy', 1, 5 * 60 * 1000);
     applyTemporaryMultiplier('algae', 1, 5 * 180 * 1000);
-    displayOnChat("As the final wave radiates its last oscillation, something deep within you shifts. It's as if the universe itself nods in approval. Your understanding of the world's intricate energies blossoms into new avenues of possibility. You suddenly find it easier to harvest energy, process information, and propagate algae. The synergy of life and land is at your command; the epoch of a new dawn beckons.");
+    displayOnChat("当最后一波辐射出最后的振荡时，你内心深处的某些东西就会发生变化。 就好像宇宙本身也在点头认可。 你对世界错综复杂能量的理解将绽放出新的可能性。 您突然发现收集能量、处理信息和繁殖藻类变得更容易。 生命与土地的协同作用由你掌控； 新的黎明时代正在召唤。");
   }
   if (anomalyType === 'muddy_patch' && !muddyPatchesAnalysed) {
     muddyPatchesAnalysed = true;
     researchQueue.push('MitoticAmplificationI');
-    displayOnChat("The last of the muddy patches unveils its secrets to you, and as you draw your insights from its damp, raw richness, a revelation forms. Among the muck and grime, you see patterns — cycles of life, of birth, and rebirth. Each muddy footprint tells a story of growth, of things that once were, and could be once again. Your essence quivers with potential as you grasp the idea that perhaps, just perhaps, a single division could yield more. Your new understanding beckons the pursuit of research in Mitotic Amplification.");
+    displayOnChat("最后一片泥泞的土地向你揭开了它的秘密，当你从潮湿、原始的丰富中汲取见解时，一种启示就形成了。 在淤泥和污垢中，你可以看到一些规律——生命、出生和重生的循环。 每一个泥泞的脚印都讲述着一个成长的故事，讲述着曾经存在过、也可能再次存在过的事物。 当你领悟到也许，只是也许，一个部门可以产生更多成果时，你的本质就充满了潜力。 您的新认识激发了您对有丝分裂放大研究的追求。");
   }
   if (anomalyType === 'crystal' && !crystalsAnalysed) {
     crystalsAnalysed = true;
-    displayOnChat("You feel an indelible bond between the crystalline lattice and the pulsing life within you. The crystals, once enigmatic sentinels of the land, now pulse in unison with your terraforming heart. This symphony of understanding enhances your capacity to weave the very fabric of life. The terraforming resources yield to your will with greater ease, a lasting tribute to the unity you've unearthed. Your biomites, zymers, fibers, sludge, and algae now flourish with a vigor unseen, a permanent testament to the resonance you've achieved with the crystalline wonders of this world.");
+    displayOnChat("你感觉到晶格和你体内脉动的生命之间有着不可磨灭的联系。 这些水晶曾经是这片土地上神秘的哨兵，现在却与你的地球化之心一致地跳动。 这种理解的交响乐增强了你编织生活的能力。 改造资源更容易屈服于你的意志，这是对你所发掘的团结的持久致敬。 你的生物螨、酶、纤维、污泥和藻类现在以看不见的活力蓬勃发展，永久证明了你与这个世界的水晶奇迹所实现的共鸣。");
     biomitesMultiplier += 0.2;
     zymersMultiplier += 0.2;
     fibersMultiplier += 0.2;
@@ -857,35 +857,35 @@ function analyseDecs(anomalyType) {
   if (anomalyType === 'reed' && !reedsAnalysed) {
     reedsAnalysed = true;
     addToResearchQueue('AutotrophicAdaptation');
-    displayOnChat("The wisdom of the marshlands seeps into your consciousness. The reeds, masters of drawing sustenance from the murky depths, inspire a vision of self-sustaining vigor within your worker cells.");
-    displayOnChat("Autotrophic Adaptation Research now available.", "hint");
+    displayOnChat("沼泽地的智慧渗透到你的意识中。 芦苇是从黑暗深处汲取营养的大师，它们激发了你的工人细胞自我维持活力的愿景。");
+    displayOnChat("自养适应研究现已推出。", "hint");
   }
   if (anomalyType === 'snow_cap' && !snowCapsAnalysed) {
     snowCapsAnalysed = true;
     // Logic to enable the new evolution for information generation
-    displayOnChat("Amidst the silent majesty of the snow caps, your cellworkers unveil the secrets of crystalline computation. The icy lattice, both stark and beautiful, inspires a surge in informational synthesis. The 'Synaptic Glacialis' evolution becomes available, each cellworker a bastion of thought, pulsating with the rhythm of discovery.");
+    displayOnChat("在雪盖的寂静威严中，你的细胞工作者揭开了晶体计算的秘密。 冰冷的格子，既朴素又美丽，激发了信息综合的激增。 “突触冰川”进化变得可用，每个细胞工作者都是思想的堡垒，随着发现的节奏而脉动。");
   }
 
   // Check if all sand dunes have been analyzed
   if (anomalyType === 'sand_dune' && !sandDunesAnalysed) {
     sandDunesAnalysed = true;
     // Logic to enable the new evolution for warmth generation
-    displayOnChat("As the last grains of the sand dunes slip through your membranous grasp, a warm current of understanding permeates your being. The 'Calorimetric Granulum' evolution emerges, each cell can act as a miniature sun, tirelessly warming the depths of your microcosmic world.");
+    displayOnChat("当沙丘的最后一粒沙粒从你的薄膜中滑过时，一股理解的暖流渗透到你的存在中。 “量热颗粒”进化出现，每个细胞都可以充当微型太阳，不知疲倦地温暖你微观世界的深处。");
   }
   if (anomalyType === 'flower' && !flowersAnalysed) {
     flowersAnalysed = true;
     resourceConversionCap = 5000; // Increase the resource conversion cap
-    displayOnChat("In the quiet contemplation of the last flower's essence, a melancholic truth unfolds within you. These blossoms, vibrant against the world's somber canvas, symbolize a fleeting beauty in a universe so vast and indifferent. Yet, in their analysis, you find a hushed resilience. The petals' delicate dance with the wind whispers secrets of abundance and transformation. As you assimilate this knowledge, the boundaries of your own capacity widen. The conversion of resources, once a trickle, now swells to a stream, mirroring the silent, enduring bloom of the flowers' own life cycle.");
+    displayOnChat("在对最后一朵花的本质的安静沉思中，忧郁的真相在你内心展开。 这些花朵在世界阴暗的画布上生机勃勃，象征着广阔而冷漠的宇宙中转瞬即逝的美丽。 然而，在他们的分析中，你会发现一种平静的韧性。 花瓣随风翩翩起舞，低声诉说着丰富和转变的秘密。 当你吸收这些知识时，你自己的能力范围就会扩大。 资源的转化曾经是涓涓细流，现在已成为溪流，反映了花朵自身生命周期的沉默、持久的绽放。");
   }
   if (anomalyType === 'salt_flat' && !saltflatsAnalysed) {
     saltflatsAnalysed = true;
     addToResearchQueue('CryohalineExcavation');
-    displayOnChat("A muted hope. The salt flats, a symbol of isolation and survival, whisper to you of paths yet to tread. The salt's crystalline structure, sharp and unyielding, unravels secrets of endurance and transformation. This newfound knowledge coalesces into a vision of Cryohaline Excavation a method to harness the salt's ability to temper the ice's cold embrace.");
-    displayOnChat("Cryohaline Excavation Research now available.", "hint");
+    displayOnChat("一丝希望。 盐滩是孤立和生存的象征，向您低语着尚未踏上的道路。 盐的晶体结构锋利而坚韧，揭示了耐力和转变的秘密。 这些新发现的知识融合成冰盐挖掘的愿景，一种利用盐的能力来缓和冰的寒冷拥抱的方法。");
+    displayOnChat("冰盐挖掘研究现已推出。", "hint");
   }
   if (anomalyType === 'rock' && !rocksAnalysed) {
     rocksAnalysed = true;
-    displayOnChat("The rocks yield their story to you, a tale of endurance through the ages. These silent sentinels of stone have withstood the winds of time, their unwavering presence a stark contrast to the fleeting moments of existence. In their unyielding nature, you find a strange kinship; as they persist, so too must you. The resilience of the rocks fortifies your resolve, allowing more diggers to join your quest to excavate the cave.");
+    displayOnChat("岩石向您讲述着它们的故事，一个千古忍耐的故事。 这些沉默的石头哨兵经受住了时间的风吹，它们坚定不移的存在与转瞬即逝的存在形成了鲜明的对比。 在他们不屈的本性中，你会发现一种奇怪的亲缘关系； 当他们坚持时，你也必须坚持。 岩石的韧性增强了您的决心，让更多的挖掘者加入您的挖掘洞穴之旅。");
     updateMaxActiveDiggers(maxActiveDiggers+5);
     setupWorkerAssignment("Cave Excavation Station", "caveExcavationStationWorkers", 1, [],
       "assign-worker-cave-excavation-station", 
@@ -903,7 +903,7 @@ function analyseDecs(anomalyType) {
   }
   if (anomalyType === 'rocky_outcrop' && !rockyOutcropsAnalysed) {
     rockyOutcropsAnalysed = true;
-    displayOnChat("With the analysis of the rocky outcrops complete, their stoic strength seeps into the very fabric of your being. These bastions of the ancient world stand firm, a testament to the relentless passage of time. Their steadfastness bestows upon you a silent gift: the capacity to expand your reach, to delve deeper into the cavernous unknown with more diggers at your command.");
+    displayOnChat("随着对岩石露头的分析完成，它们的坚忍力量会渗透到你的身体结构中。 这些古代世界的堡垒屹立不倒，是时间无情流逝的证明。 他们的坚定不移赋予你一份无声的礼物：扩大你的影响力的能力，让更多的挖掘者听从你的指挥，深入探索未知的洞穴。");
     updateMaxActiveDiggers(maxActiveDiggers+5);
     setupWorkerAssignment("Cave Excavation Station", "caveExcavationStationWorkers", 1, [],
       "assign-worker-cave-excavation-station", 

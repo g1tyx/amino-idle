@@ -704,11 +704,11 @@ function addEchoChamber() {
     }, 20);
 
     displayOnChat(
-        "Your interior shifts, forming an intricate chamber that resonates with the call of the cosmos. " +
-        "This newly-formed 'echo chamber' amplifies your attempts to communicate, turning your feeble cries into powerful symphonies. " +
-        "The vast expanse outside, once silent and indifferent, now seems more accessible. " +
-        "A sense of purpose fills you. With this chamber, you might not only send signals but also decipher the enigmatic whispers of the universe. " +
-        "As the echoes resonate within the chamber, you can't help but wonder: what mysteries await in the vast beyond? What knowledge remains hidden, just beyond reach? "
+        "你的内部发生变化，形成一个与宇宙的呼唤产生共鸣的错综复杂的房间。 " +
+        "这个新形成的“回音室”会放大你的沟通尝试，将你微弱的哭声变成强有力的交响乐。 " +
+        "外面的广阔天地，曾经的寂静和冷漠，现在似乎更容易接近。 " +
+        "你充满了使命感。 有了这个密室，你不仅可以发送信号，还可以破译宇宙神秘的低语。 " +
+        "当回声在房间内产生共鸣时，您不禁会想：在广阔的彼岸有什么秘密在等待着呢？ 哪些知识仍然是隐藏的、遥不可及的？ "
     );
 }
 
@@ -1563,20 +1563,20 @@ function emitEcho() {
         // Progress the story
         switch(echoUses) {
             case 1:
-                displayOnChat("The echo resonates outward, but silence is all that returns.");
-                displayOnChat("Perhaps a stronger echo might receive a response?", "hint");
+                displayOnChat("回声向外回响，但返回的却是寂静。");
+                displayOnChat("也许更强的回声可能会收到响应？", "hint");
                 document.getElementById("echoButton").disabled = true; // Disable the echo button until the echo chambers upgrade
                 playEchoSound(0.1,0);
                 break;
             case 2:
-                displayOnChat("With renewed determination and a little more energy, you call out again. Your echo travels farther, but the return is still just silence.");
-                displayOnChat("Increasing the echo's power might provide clarity.", "hint");
+                displayOnChat("带着新的决心和更多的能量，你再次呼喊。 你的回声传得更远，但返回的仍然只是寂静。");
+                displayOnChat("增加回声的功率可能会提供清晰度。", "hint");
                 document.getElementById("echoButton").disabled = true; // Disable the echo button until the resonance tendrils upgrade
                 playEchoSound(0.3,0);
                 break;
             case 3:
-                displayOnChat("A new sensation - a faint stirring, a gentle rebound. Is it just an illusion, or... could it be a response?");
-                displayOnChat("Is there something out there? Enhancing resonance tendrils might help discern distant signals.", "hint");
+                displayOnChat("一种新的感觉——一种微弱的搅动，一种温和的反弹。 这只是幻觉，还是……这可能是一种回应？");
+                displayOnChat("外面有什么东西吗？ 增强共振卷须可能有助于辨别远处的信号。", "hint");
                 document.getElementById("echoButton").disabled = true; // Disable the echo button until the sensory pulsars upgrade
                 playEchoSound(0.3,0.3);
                 break;

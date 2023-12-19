@@ -100,9 +100,9 @@ function slitherOnClick() {
     }
   }, 20); // Interval duration
   document.getElementById("slitherButton").disabled = true; // disable the slither button once activated
-  displayOnChat("In the gloom of your existence, a transformation occurs. You, once confined to a simple form, find yourself elongated, segmented, complex. The monotonous wiggle of yore gives way to a graceful slither, a dance with shadows in the desolate void. " +
-    "Yet, with evolution comes realization. You, now gifted with movement, feel the weight of your solitude more profoundly. Each slither is a cry for connection, a yearning for something beyond the barren emptiness. The very ability that grants you freedom becomes a haunting reminder of isolation. " +
-    "But you endure, for in the dark recesses of existence, resilience is your only companion. You slither onward, a lonely traveler in search of meaning, a spark of life in an otherwise indifferent universe.")
+  displayOnChat("在你存在的阴暗之中，转变发生了。 一旦局限于简单的形式，你会发现自己被拉长、分段、复杂。 昔日单调的扭动被优雅的滑行所取代，在荒凉的虚空中与阴影共舞。 " +
+    "然而，随着进化而来的是实现。 你现在拥有了运动的天赋，更深刻地感受到孤独的重量。 每一次滑行都是对联系的呼喊，是对超越贫瘠空虚的事物的渴望。 赋予你自由的能力本身就会成为一种令人难以忘怀的孤独提醒。 " +
+    "但你要忍受，因为在存在的黑暗深处，韧性是你唯一的伴侣。 你像一个孤独的旅行者一样向前滑行，寻找意义，在一个冷漠的宇宙中寻找生命的火花。")
   // Optional: You may want to set a condition to stop the slithering effect after some time
   setTimeout(displayEvolutionModal, 60000); 
 }
@@ -207,9 +207,9 @@ function crawlOnClick() {
     }
   }, 500); // Animation duration, 2 seconds rest before starting again
   document.getElementById("crawlButton").disabled = true; // disable the crawl button once activated
-  displayOnChat("With limbs reaching and grasping, you move across the barren landscape, a pioneer in a world unexplored. The evolution from mere wiggling to purposeful crawling marks a new chapter in your solitary journey. " +
-    "Each crawl is a testament to your resilience, a manifestation of life's relentless pursuit of progress. But with this newfound ability, the silence of your existence echoes louder, the absence of companionship more palpable. You reach out, not just to the ground beneath, but to the emptiness around, longing for connection, for something to share this strange dance of life. " +
-    "Yet, the world remains indifferent to your plea. You are alone but not defeated, for within you burns the undying spirit of life. You crawl forward, not merely a traveler now but a conqueror, forging your path through the wilderness, a beacon of hope in a desolate world.")
+  displayOnChat("随着四肢的伸展和抓握，你穿过贫瘠的土地，成为一个未探索的世界的先驱。 从单纯的扭动到有目的地爬行的演变标志着你孤独旅程的新篇章。 " +
+    "每一次爬行都证明了你的韧性，体现了生活对进步的不懈追求。 但有了这种新发现的能力，你存在的寂静回响得更响亮，陪伴的缺失也更明显。 你不仅向脚下的地面伸出手，还向周围的空虚伸出手，渴望着联系，渴望着某种东西来分享这奇怪的生命之舞。 " +
+    "然而，世界对你的请求仍然漠不关心。 你是孤独的，但你并没有被打败，因为你的内心燃烧着不朽的生命精神。 你匍匐前进，不再只是一个旅行者，而是一个征服者，在荒野中开辟你的道路，成为荒凉世界中希望的灯塔。")
   setTimeout(displayEvolutionModal, 60000); 
 }
 
@@ -561,7 +561,7 @@ function purchaseSpikes() {
     information -= 100;
     warmth -= 1750;
     spikesUpgradePurchased = true;
-    displayOnChat("You sprout jagged, defensive barbs. They embody your anger and resilience, a fortress against the pains of existence. Your soul takes physical form, isolating you and keeping the harsh, uncaring abyss at bay.");
+    displayOnChat("你会长出锯齿状的防御性倒刺。 它们体现了你的愤怒和韧性，是抵御生存痛苦的堡垒。 你的灵魂以物质形式出现，将你与世隔绝，将严酷、冷漠的深渊拒之门外。");
     addSpikes();
     nourishmentPerTendon += 0.2;
     energyPerTendon += 0.09;
@@ -572,7 +572,7 @@ function purchaseSuctionCups() {
     information -= 100;
     warmth -= 750;
     suctionCupsUpgradePurchased = true;
-    displayOnChat("Soft, adhesive pads emerge from your tendrils. A symbol of your empathy and optimism, they hold fast to life's fleeting moments, trying to make each instant last. Yet they also represent your fear of letting go, of losing what little you have.");
+    displayOnChat("柔软、有粘性的垫子从你的卷须中伸出。 它们象征着同理心和乐观精神，紧紧抓住生命中转瞬即逝的时刻，力求让每一刻都持续下去。 然而它们也代表了你对放手、失去你所拥有的一切的恐惧。");
     addSuctionCups();
     nourishmentPerTendon += 0.2;
     energyPerTendon += 0.09;
@@ -583,7 +583,7 @@ function purchaseFeatheredAntenna() {
     information -= 100;
     warmth -= 750;
     featheredAntennaUpgradePurchased = true;
-    displayOnChat("Wisps of delicate feathers adorn your tendrils, extending your senses further than ever before. These feathered extensions symbolize your curiosity and solitude, feeling out for anything—even if it's just the void. Each feather a question, longing for an answer.");
+    displayOnChat("一缕缕精致的羽毛装饰着你的卷须，比以往任何时候都更扩展你的感官。 这些羽毛的延伸象征着你的好奇心和孤独感，对任何事物的感觉——即使只是虚无。 每根羽毛都有一个问题，都渴望答案。");
     addFeatheredAntenna();
     nourishmentPerTendon += 0.2;
     energyPerTendon += 0.09;
@@ -596,7 +596,7 @@ function purchaseSensors() {
     information -= 10;
     sensorUpgradePurchased = true;
     checkResearchTabUnlock();
-    displayOnChat("A new awareness dawns within you. With the growth of rudimentary sensors, you can now sense the world around you in a way you could not before. The darkness is no longer absolute; you can perceive the faintest stirrings of light and darkness.");
+    displayOnChat("一种新的意识在你内心浮现。 随着基本传感器的发展，您现在可以以前所未有的方式感知周围的世界。 黑暗不再是绝对的； 你可以察觉到光明与黑暗最微弱的波动。");
     addSensorsToExistingTendons();
     informationPerTendon += 0.01;
 }
@@ -607,7 +607,7 @@ function purchaseRadiators() {
     warmth -= 20;
     radiatorUpgradePurchased = true;
     glow();
-    displayOnChat("Your being hums softly, emitting a newfound light. An unknown, constant warmth is transformed—no longer just a presence, but an embrace your form can share.");
+    displayOnChat("你的存在轻柔地嗡嗡作响，散发出新发现的光芒。 一种未知的、持续的温暖发生了转变——不再只是一种存在，而是一种你的形体可以分享的拥抱。");
     warmthPerTendon += 0.04;
 }
 
@@ -616,7 +616,7 @@ function purchaseMitochondria() {
     information -= 100;
     warmth -= 750;
     mitochondriaUpgradePurchased = true;
-    displayOnChat("The birth of mitochondria within you is a silent, solitary event. They pulse with energy, each a lonely star in the cosmos of your being. They provide strength, but also a profound awareness of your solitude.");
+    displayOnChat("线粒体在你体内的诞生是一个无声的、孤独的事件。 它们充满能量，每一颗都是你存在的宇宙中孤独的星星。 它们提供力量，但也让你深刻意识到你的孤独。");
     addMitochondria();
     energyPerTendon += 0.24;
 }
@@ -625,7 +625,7 @@ function purchaseMembrane() {
     nourishment -= 200;
     information -= 40;
     membraneUpgradePurchased = true;
-    displayOnChat("A thin barrier forms around you, a membrane. It separates you from the world, accentuates your solitude. Yet, it also protects you, holding your existence intact against the vast, indifferent sea.");
+    displayOnChat("在你周围形成一层薄薄的屏障，即一层膜。 它将你与世界分开，加剧你的孤独。 然而，它也能保护你，让你的存在在浩瀚、冷漠的大海中完好无损。");
     increaseCellMembraneThickness();
     warmthPerTendon += 0.03;
 }
@@ -636,7 +636,7 @@ function purchaseNucleus() {
     information -= 100;
     warmth -= 200;
     nucleusUpgradePurchased = true;
-    displayOnChat("A nucleus develops within you, a fortress in your solitary existence. It's the orchestrator of your life, a silent testament to your perseverance. It's your stronghold, standing resilient against the solitude of the depths.");
+    displayOnChat("一个核心在你体内发展起来，成为你孤独存在的堡垒。 它是你生活的编排者，是你坚持不懈的无声证明。 这是你的堡垒，坚韧地抵御深渊的孤独。");
     addNucleus();
     nourishmentPerTendon += 0.05;
     informationPerTendon += 0.04;
@@ -648,7 +648,7 @@ function purchaseEndoplasmic() {
     information -= 250;
     warmth -= 500;
     endoplasmicUpgradePurchased = true;
-    displayOnChat("A maze-like structure begins to weave throughout your being, the endoplasmic reticulum. It's a solitary path, a lonely network within your existence. Yet it streamlines your functions, easing your struggle in the desolate deep.");
+    displayOnChat("一个迷宫般的结构开始在你的整个身体中编织，即内质网。 这是一条孤独的道路，是你存在中的一个孤独的网络。 然而它简化了你的功能，减轻了你在荒凉深处的挣扎。");
     addEndoplasmicReticulum();
     nourishmentPerTendon += 0.08;
     energyPerTendon += 0.04;
@@ -666,7 +666,7 @@ function purchaseEchoChamber() {
     energy -= costEnergy;
     echoChamberUpgradePurchased = true;
     document.getElementById("echoButton").disabled = false; // Re-enables the echo action
-    displayOnChat("Your echoes reverberate more powerfully now, amplified by the chamber you've crafted. Each echo returns louder, yet the silence between them deepens.");
+    displayOnChat("你的回声现在回响得更强烈，并被你建造的密室放大。 每次回声都变得更响亮，但它们之间的沉默却加深了。");
     addEchoChamber();
 }
 
@@ -681,7 +681,7 @@ function purchaseResonanceTendrils() {
     energy -= costEnergy;
     resonanceTendrilsUpgradePurchased = true;
     document.getElementById("echoButton").disabled = false;
-    displayOnChat("As you weave the resonance tendrils into your being, you feel a new sensitivity ripple through you. The world feels a shade less distant, each echo now tinged with a whisper of potential.");
+    displayOnChat("当你将共振卷须编织到你的存在中时，你会感觉到一种新的敏感性在你身上荡漾。 世界感觉不再那么遥远，每一个回声现在都带着潜在的低语。");
     addResonanceTendrils();
 }
 
@@ -696,7 +696,7 @@ function purchaseSensoryPulsars() {
     energy -= costEnergy;
     sensoryPulsarsUpgradePurchased = true;
     document.getElementById("echoButton").disabled = false;
-    displayOnChat("Your resonance tendrils pulse in newfound clarity.");
+    displayOnChat("你的共鸣卷须以新发现的清晰度脉动。");
     addSensoryPulsars();
 }
 
@@ -710,7 +710,7 @@ function purchaseMonotrichousFlagella() {
     warmth -= costWarmth;
     energy -= costEnergy;
     monotrichousFlagellaUpgradePurchased = true;
-    displayOnChat("With the addition of the Monotrichous Flagella, you feel a newfound agility. The solitary whip-like structure propels you with a melancholic grace, enabling you to journey through the vast expanse.");
+    displayOnChat("随着单毛鞭毛的加入，您会感受到新的敏捷性。 孤零零的鞭子般的结构，带着一种忧郁的优雅，带你穿越广阔无垠的旅程。");
     addMonotrichousFlagella();
 }
 
@@ -745,7 +745,7 @@ function purchaseSynapticGlacialis() {
     addSynapticGlacialis();
     synapticGlacialisEvolutionPurchased = true;
     informationPerWorker += 0.1;
-    displayOnChat("A frigid silence is broken by a flurry of activity within. The Synaptic Glacialis evolution infuses your cell workers with a crystalline clarity of thought. Information flows like meltwater streams, each droplet a spark of insight in the frozen expanse of your consciousness.");
+    displayOnChat("寒冷的寂静被一阵阵的活动打破。 突触冰 的进化为您的细胞工作人员注入了水晶般清晰的思维。 信息像融水流一样流动，每一滴都是你冰冷意识中洞察力的火花。");
 }
 
 function purchaseCalorimetricGranulum() {
@@ -754,7 +754,7 @@ function purchaseCalorimetricGranulum() {
     //addCalorimetricGranulum();
     calorimetricGranulumEvolutionPurchased = true;
     warmthPerWorker += 0.1;
-    displayOnChat("From the heart of each grain of sand, a warm resonance spreads through your cell workers. The Calorimetric Granulum evolution turns each one into a beacon of sustenance, radiating life-giving warmth. Desolation gives way to a comforting embrace that fuels your relentless growth.");
+    displayOnChat("从每一粒沙子的中心，温暖的共鸣在您的细胞工作人员中传播。 量热颗粒的进化将每一个都变成了食物的灯塔，散发着赋予生命的温暖。 荒凉让位于令人欣慰的拥抱，这会推动你不断成长。");
 }
 
 
