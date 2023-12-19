@@ -1,18 +1,18 @@
 
 
 var nourishmentStoryLines = [
-  { text: "You awake in darkness...", nourishment: 1 },
-  { text: "You realize you can wiggle...", nourishment: 2 },
-  { text: "You sense the presence of nourishment...", nourishment: 5 },
-  { text: "You are alone...", nourishment: 7 },
-  { text: "A distant echo resonates within you, a call to move forward...", nourishment: 239 },
-  { text: "The oppressive silence weighs heavily on you. Are you the only one?", nourishment: 369 },
-  { text: "The endless void around you seems to mock your existence, yet you persist...", nourishment: 452 },
-  { text: "In the darkness, you continue to grow, driven by an inexplicable will...", nourishment: 650 },
-  { text: "You reach out to the void, seeking, hoping...", nourishment: 870 },
-  { text: "With every passing moment, your existence seems both a miracle and a curse...", nourishment: 1210 },
-  { text: "You feel an odd sense of purpose... Are you destined for something more?", nourishment: 1604 },
-  { text: "The cold emptiness around you only fuels your resolve...", nourishment: 1990 }
+  { text: "你在黑暗中醒来...", nourishment: 1 },
+  { text: "你意识到你可以摇摆...", nourishment: 2 },
+  { text: "你感觉到营养的存在...", nourishment: 5 },
+  { text: "你很孤独...", nourishment: 7 },
+  { text: "遥远的回声在你内心产生共鸣，召唤你前进...", nourishment: 239 },
+  { text: "压抑的沉默让你感到沉重。 你是唯一的一个吗？", nourishment: 369 },
+  { text: "周围无尽的虚空似乎在嘲笑你的存在，但你却坚持着...", nourishment: 452 },
+  { text: "黑暗中，你在一种莫名的意志的驱使下不断成长...", nourishment: 650 },
+  { text: "你伸向虚空，寻找，希望...", nourishment: 870 },
+  { text: "每时每刻，你的存在都显得既是奇迹又是诅咒...", nourishment: 1210 },
+  { text: "你感到一种奇怪的使命感……你注定会拥有更多的东西吗？?", nourishment: 1604 },
+  { text: "你周围寒冷的空虚只会助长你的决心...", nourishment: 1990 }
 ];
 
 
@@ -20,45 +20,45 @@ var nourishmentStoryLines = [
 
 
 var tendonStoryLines = [
-  "A strange sensation pulses through you as something new takes shape. It's strange, it's new... it's growth.",
-  "The tendrils multiply, each one strengthening your sense of the world around you.",
-  "As each new filament forms, you feel yourself becoming more attuned to the subtle shifts in the environment.",
-  "With every new growth, your understanding deepens. You are more than you were.",
-  "Your tendrils reach out, brushing against the boundaries of your existence."
+  "当新的事物成形时，一种奇怪的感觉在你身上涌动。 很奇怪，很新……这是成长.",
+  "卷须不断繁殖，每一根卷须都会增强你对周围世界的感知.",
+  "随着每根新细丝的形成，您会感觉自己变得更加适应环境的微妙变化.",
+  "随着每一次新的成长，你的理解也会加深。 你比以前更优秀了.",
+  "你的卷须伸出，拂过你存在的界限."
 ];
 
 // Story lines
 var senseStoryLines = [
-  { text: "You feel a strange pull...", information: 1 },
-  { text: "Images, sounds, feelings flood your consciousness...", information: 3 },
-  { text: "You can sense the world around you. It's vast and overwhelming...", information: 5 },
-  { text: "You yearn for more. To know more. To understand...", information: 10 },
-  { text: "You begin to understand. The world is no longer just chaos, but a puzzle to be solved. A puzzle you face alone.", information: 100 },
-  { text: "Patterns emerge from the chaos. You anticipate, you adapt, you learn. Yet, learning only deepens your solitude.", information: 250 },
-  { text: "You have a sense of the world now. It's complex, vast, beautiful... and utterly devoid of others like you.", information: 500 },
-  { text: "You understand now. The world, in all its complexity, is an extension of you. And you are a part of it. But this understanding brings a chilling realization - you are utterly alone.", information: 1000 }
+  { text: "你感觉到一种奇怪的拉力...", information: 1 },
+  { text: "图像、声音、感觉充斥你的意识...", information: 3 },
+  { text: "你可以感知周围的世界。 它浩瀚而势不可挡...", information: 5 },
+  { text: "你渴望更多。 了解更多。 要了解...", information: 10 },
+  { text: "你开始明白了。 世界不再只是混乱，而是一个有待解决的谜题。 你独自面对的难题.", information: 100 },
+  { text: "模式从混乱中显现出来。 你预测、你适应、你学习。 然而，学习只会加深你的孤独.", information: 250 },
+  { text: "你现在对世界有了一定的认识。 它复杂、广阔、美丽……而且完全没有像你这样的人.", information: 500 },
+  { text: "你现在明白了。 世界虽然复杂，但也是你的延伸。 而你是其中的一部分。 但这种理解带来了令人不寒而栗的认识——你是完全孤独的.", information: 1000 }
 ];
 
 var glowStoryLines = [
-  { text: "You feel a warmth building within you...", warmth: 1 },
-  { text: "Light begins to radiate from your form...", warmth: 3 },
-  { text: "You shine brightly, piercing the darkness...", warmth: 5 },
-  { text: "Your glow is comforting, yet lonely. You yearn for another...", warmth: 10 },
-  { text: "Your glow pierces the darkness. A beacon of solitude amidst the void.", warmth: 100 },
-  { text: "Your glow is constant, comforting. A solitary reminder of your existence.", warmth: 250 },
-  { text: "Your light fills the world. It reveals the secrets of the darkness, and the stark truth of your loneliness.", warmth: 500 },
-  { text: "You are the light. You are warmth. You are life. And you are alone.", warmth: 1000 }
+  { text: "你感觉到一股温暖在你体内积聚...", warmth: 1 },
+  { text: "光开始从你的形体中散发出来...", warmth: 3 },
+  { text: "你闪耀着光芒，刺破黑暗...", warmth: 5 },
+  { text: "你的光芒令人安慰，却又孤独。 你渴望另一个...", warmth: 10 },
+  { text: "你的光芒刺破黑暗。 虚空中孤独的灯塔.", warmth: 100 },
+  { text: "你的光芒持续不断，令人心旷神怡。 唯一提醒你的存在.", warmth: 250 },
+  { text: "你的光充满了世界。 它揭示了黑暗的秘密，以及你孤独的赤裸裸的真相.", warmth: 500 },
+  { text: "你是光。 你是温暖。 你就是生命。 而你孤身一人.", warmth: 1000 }
 ];
 
 var grabStoryLines = [
-  { text: "You reach out. For what, you're not sure...", energy: 1 },
-  { text: "You feel a connection, a tug...", energy: 3 },
-  { text: "You can interact, move things, change things...", energy: 5 },
-  { text: "You are powerful, yet powerless. You yearn for change...", energy: 10 },
-  { text: "You are powerful, your energy is limitless. But with no one to share it with, does it matter?", energy: 100 },
-  { text: "You shape the world around you. Your will is law. Yet, your rule is over an empire of one.", energy: 250 },
-  { text: "You are unstoppable, a force of nature. But nature is indifferent to your solitude.", energy: 500 },
-  { text: "You are the world. And the world is you. A world of one.", energy: 1000 }
+  { text: "你伸出手来。 为了什么，你不确定...", energy: 1 },
+  { text: "你感受到一种联系、一种牵引力...", energy: 3 },
+  { text: "你可以互动、移动事物、改变事物...", energy: 5 },
+  { text: "你很强大，但又无能为力。 你渴望改变...", energy: 10 },
+  { text: "你很强大，你的能量是无限的。 但没有人可以分享，这有什么关系吗？?", energy: 100 },
+  { text: "你塑造了你周围的世界。 你的意志就是法律。 然而，你的统治是一个人的帝国.", energy: 250 },
+  { text: "你是不可阻挡的，是一种自然的力量。 但大自然对你的孤独无动于衷.", energy: 500 },
+  { text: "你就是世界。 而世界就是你。 一个人的世界.", energy: 1000 }
 ];
 
 
@@ -67,46 +67,46 @@ var grabStoryLines = [
 
 // Map-related story events for different terrains
 var landEvents = [
-    "You feel a solid surface beneath for the first time. The unfamiliar sensation is both intriguing and comforting.",
-    "As you move through the land, you sense the rhythmic vibrations of distant entities. Curiosity grows.",
+    "你第一次感觉到下面有一个坚实的表面。 陌生的感觉既有趣又令人安慰.",
+    "当你穿过这片土地时，你会感觉到远处实体的有节奏的振动。 好奇心增长.",
     // ... additional land events
 ];
 var waterEvents = [
-    "You feel at home in the gentle embrace of the water, the cool currents flowing past your form.",
-    "Tiny particles float past, remnants of ancient times, sparking memories deep within you.",
+    "在水的温柔怀抱中，凉爽的水流流过您的身体，您会感到宾至如归.",
+    "微小的颗粒飘过，远古的遗迹，激发你内心深处的记忆.",
     // ... additional water events
 ];
 var desertEvents = [
-    "A parching warmth envelops you, a vast expanse where the air seems to thirst. It's an environment that demands resilience.",
-    "A vast emptiness stretches before you, its silence profound. It's a place of both desolation and peace.",
-    "The sands shift beneath, each grain a testament to the passage of time. Here, in the quiet, memories of distant epochs stir.",
-    "Occasionally, a whisper of wind stirs the sands, creating patterns that tell tales of ages gone by. You wonder about the stories they hold.",
+    "一股灼热的温暖包围着你，广阔无垠的空气似乎很渴。 这是一个需要韧性的环境.",
+    "一片广阔的虚空在你面前展开，寂静深刻。 这是一个既荒凉又和平的地方.",
+    "沙子在下面移动，每一粒沙子都是时间流逝的证明。 在这里，在安静中，遥远时代的记忆浮现.",
+    "偶尔，一阵风吹过沙子，形成图案，诉说着过去岁月的故事。 你想知道他们的故事.",
     // ... additional desert events
 ];
 var forestEvents = [
-    "The dense canopy above provides a protective embrace. But within the shadows, a deep solitude persists.",
-    "The quiet rustle of leaves carries whispers from ages past. They speak of times both vibrant and desolate.",
-    "Each tree stands tall, a lone sentinel with roots deep in history. Their collective silence speaks volumes.",
-    "In the midst of the forest, you feel both sheltered and isolated, reminded of the delicate balance between life and loneliness.",
+    "上面茂密的树冠提供了一个保护性的拥抱。 但在阴影之中，依然存在着深深的孤独.",
+    "树叶安静的沙沙声承载着远古的低语。 他们谈论着充满活力和荒凉的时代.",
+    "每棵树都高高耸立，就像一个孤独的哨兵，深深扎根于历史之中。 他们的集体沉默说明了一切.",
+    "在森林之中，你会感到庇护和孤立，提醒你生命与孤独之间的微妙平衡.",
     // ... additional forest events
 ];
 var mountainEvents = [
-    "The rugged terrain challenges every move, a testament to the enduring spirit needed to traverse these heights.",
-    "Majestic peaks rise above, ancient and unyielding. They have seen countless eons pass, standing solitary and proud.",
-    "The crisp mountain air is both invigorating and isolating, a stark reminder of the thin line between existence and oblivion.",
-    "As you ascend, the world below seems distant, a faded memory. Here, amidst the peaks, solitude reigns supreme.",
+    "崎岖的地形对每一步都是挑战，这证明了穿越这些高度所需的持久精神.",
+    "雄伟的山峰拔地而起，古老而坚韧。 他们见证了无数劫的流逝，孤独而骄傲.",
+    "清新的山间空气既令人振奋又与世隔绝，鲜明地提醒人们存在与遗忘之间的一线之隔.",
+    "当你上升时，下面的世界似乎很遥远，是一种褪色的记忆。 在这里，群山之中，孤独至高无上.",
     // ... additional mountain events
 ];
 var swampEvents = [
-    "The stagnant waters reflect a distorted world, echoing your feelings of being lost and adrift.",
-    "Each movement is met with resistance, as the swamp clings to you, urging patience. It's a world of slow revelations and hidden mysteries.",
-    "As you delve deeper, the dense atmosphere feels almost suffocating, a sensation that mirrors your growing despair.",
-    "Amidst the haze, you sense ancient rhythms, cycles that have repeated for eons. The swamp, though foreboding, holds tales of endurance and adaptation.",
+    "死水映照出扭曲的世界，呼应着你迷失与漂泊的感觉.",
+    "每一个动作都会遇到阻力，因为沼泽紧贴着你，需要耐心。 这是一个充满缓慢启示和隐藏奥秘的世界.",
+    "当你深入探索时，浓密的气氛让人感觉几乎令人窒息，这种感觉反映出你日益增长的绝望.",
+    "在薄雾之中，你感受到古老的韵律，以及亿万年以来不断重复的循环。 沼泽虽然不祥，却蕴藏着耐力和适应的故事.",
     // ... additional water events
 ];
 var iceEvents = [
-    "A biting chill greets you, a world blanketed in white. The stillness is both haunting and beautiful, a testament to the extremes of nature.",
-    "Every motion feels amplified in the quiet, the ice beneath echoing each gesture. This frozen expanse speaks of solitude and the stark beauty of isolation.",
+    "刺骨的寒意向你袭来，世界被白色覆盖。 宁静既令人难忘又美丽，证明了大自然的极端性.",
+    "每一个动作都在安静中被放大，下面的冰与每一个动作相呼应。 这片冰冻的土地诉说着孤独和孤立的荒凉之美.",
     // ... additional water events
 ];
 
