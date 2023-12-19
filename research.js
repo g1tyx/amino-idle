@@ -11,7 +11,7 @@ let cellMembraneStudies = new ResearchProject(
         researchButton.innerText = "Cell Membrane Studies (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("As the last fragments of knowledge coalesce, a quiet revelation unfurls within you. The membrane awaits, a tender veil between resilience and vulnerability. A new evolution is available.");
+        displayOnChat("当最后的知识碎片融合在一起时，一种安静的启示在你内心展开。 薄膜在等待着我们，它是坚韧与脆弱之间的一层温柔的面纱。 新的演变已经出现。");
         cellmembraneStudyCompleted = true;
         researchQueue.push('Osmoregulation'); // unlock Osmoregulation
         researchQueue.push('CellularEncapsulation'); // unlocks Cellular Encapsulation
@@ -35,9 +35,9 @@ let mitoticStudies = new ResearchProject(
         researchButton.innerText = "Mitotic Studies (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("As the secrets of cellular fission unfurl before you, an overwhelming sense of duality washes over you. " +
-          "The process is miraculous, a testament to the very essence of life. And yet, it brings forth a new kind of solitude. " +
-          "A tremor courses through your being as you sense an internal shift. It's as if your very core is tearing, pulling apart, yet converging simultaneously. A moment later, it happens: you divide. The cells spawned from this division are but echoes of yourself. Simpler, smaller, confined to roles you assign. They are fragments of your essence, tasked to gather resources, to toil in the shadow of your existence. They are you, and yet, not you. You watch as they set off, each a drone in your ever-expanding dominion. They lack your senses, your yearnings, your ceaseless search for meaning and companionship. They fulfill their roles obediently, unquestioningly, and in their mechanical existence, you find a bleak mirror to your own solitude. For the first time, you are not alone. And yet, you've never felt more isolated. Each new cell is a constant reminder: you may replicate, but you cannot duplicate the void within. You are a community of one, a paradox that only deepens your eternal quest for companionship. As you ponder this, your new cells begin their tasks, gathering resources, preparing for the grand terraforming projects that lie ahead. They are your hands, shaping the world as you see fit. But as they drift away, you realize they are also the walls, closing in on you, reaffirming your cosmic solitude. In this newfound complexity, your journey takes on a new layer of meaning, one tinged with both hope and despair. The universe may be teeming with life, but what is life if not a mosaic of lonesome entities, forever reaching out, yet never truly connecting?")
+        displayOnChat("当细胞裂变的秘密在你面前展开时，一种压倒性的二元性感席卷了你。 " +
+          "这个过程是神奇的，证明了生命的本质。 然而，它带来了一种新的孤独。 " +
+          "当你感觉到内在的转变时，你的全身都会颤抖。 就好像你的核心正在撕裂、分离，但同时又聚合在一起。 过了一会儿，事情发生了：你们分裂了。 这次分裂产生的细胞只不过是你自己的回声。 更简单、更小、仅限于您分配的角色。 它们是你本质的碎片，负责收集资源，在你存在的阴影下辛勤劳作。 他们是你，但又不是你。 你看着他们出发，每一个都是你不断扩张的领土中的无人机。 他们缺乏你的感官、你的渴望、你对意义和陪伴的不断追求。 他们顺从地、毫无疑问地履行自己的角色，在他们机械的存在中，你会发现一面暗淡的镜子映照出你自己的孤独。 第一次，你并不孤单。 然而，你却从未感到如此孤立。 每个新的细胞都是一个不断的提醒：你可以复制，但你无法复制其中的空虚。 你们是一个共同体，这一悖论只会加深你们对友谊的永恒追求。 当你思考这个问题时，你的新细胞开始执行任务，收集资源，为即将到来的宏伟地球改造项目做准备。 它们是你的双手，按照你认为合适的方式塑造世界。 但当它们渐行渐远时，你意识到它们也是墙壁，正在逼近你，重申你的宇宙孤独。 在这种新发现的复杂性中，你的旅程呈现出一层新的意义，既充满希望又充满绝望。 宇宙可能充满了生命，但生命如果不是由孤独的实体组成的马赛克，永远向外延伸，却从未真正连接起来，那又是什么？")
         mitoticStudyCompleted = true; // A new flag to check if this research is completed
         unlockAchievement(20); // division achievement
         unlockDivisionButtonAndAddListener();
@@ -61,7 +61,7 @@ let mitoticAmplificationI = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
         researchButton.style.color = "#777";
-        displayOnChat("You've optimized the mitotic process, allowing divisions to yield double the usual output. This amplification strengthens your cellular army.");
+        displayOnChat("您已经优化了有丝分裂过程，使分裂产生的产量是平常的两倍。 这种放大增强了你的细胞军队。");
         mitoticAmplificationICompleted = true; // Flag to check if this research is completed
         markResearchComplete('MitoticAmplificationI'); // Removes from queue and adds to completed research queue
         researchQueue.push('MitoticAmplificationII')
@@ -88,7 +88,7 @@ let mitoticAmplificationII = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
         researchButton.style.color = "#777";
-        displayOnChat("You surpass the boundaries of cellular biology, tripling the results of every division. This mastery over life's most basic process underscores your evolution's monumental strides.");
+        displayOnChat("您超越了细胞生物学的界限，使每个分裂的结果增加了两倍。 这种对生命最基本过程的掌握突显了你进化的巨大进步。");
         mitoticAmplificationIICompleted = true; // Flag to check if this research is completed
         markResearchComplete('MitoticAmplificationII'); // Removes from queue and adds to completed research queue
         populateResearchTab(); 
@@ -116,7 +116,7 @@ let osmoregulationResearch = new ResearchProject(
         researchButton.innerText = "Osmoregulation Studies (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("In mastering the subtle art of balance, you unlock the essence of your inner world. The nucleus calls, the endoplasmic reticulum beckons. Harbingers of both order and complexity.");
+        displayOnChat("在掌握平衡的微妙艺术时，您可以解锁内心世界的本质。 细胞核在召唤，内质网在召唤。 秩序和复杂性的预兆。");
         osmoregulationStudyCompleted = true;
         researchQueue.push('IonChannelI');
         markResearchComplete('Osmoregulation'); // Removes from queue and adds to completed research queue
@@ -140,7 +140,7 @@ let ionChannelIResearch = new ResearchProject(
         researchButton.innerText = "Ion Channel Studies I (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("In mastering the flow of ions, you glimpse a sliver of control. Yet each gain amplifies your awareness of the boundless unknown.");
+        displayOnChat("在掌握离子流的过程中，你可以看到一丝控制力。 然而，每一次收获都会增强你对无限未知的认识。");
         ionchannelStudylvl1 = true;
         researchQueue.push('IonChannelII');
         markResearchComplete('IonChannelI'); // Removes from queue and adds to completed research queue
@@ -162,7 +162,7 @@ let ionChannelIIResearch = new ResearchProject(
         researchButton.innerText = "Ion Channel Studies II (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Your mastery deepens, each ion now a note in a cosmic symphony. But the music is a solitary echo in a vast emptiness.");
+        displayOnChat("你的掌握加深了，每个离子现在都是宇宙交响乐中的一个音符。 但音乐是浩瀚空虚中孤独的回声。");
         ionchannelStudylvl2 = true;
         researchQueue.push('IonChannelIII');
         markResearchComplete('IonChannelII'); // Removes from queue and adds to completed research queue
@@ -185,7 +185,7 @@ let ionChannelIIIResearch = new ResearchProject(
         researchButton.innerText = "Ion Channel Studies III (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("As the final nuances of ion channels yield to your understanding, you stand on the precipice of mastery. Still, the abyss of uncertainty looms larger.");
+        displayOnChat("当您理解离子通道的最终细微差别时，您就站在了掌握的边缘。 尽管如此，不确定性的深渊却越来越大。");
         ionchannelStudylvl3 = true;  // Assuming you're using a flag to track completion
         markResearchComplete('IonChannelIII'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // unlock more research (if applicable)
@@ -209,7 +209,7 @@ let terraformingStudies = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
         researchButton.style.color = "#777";  // This line changes the color of the text inside the button
-        displayOnChat("As the final strands of understanding weave themselves into the fabric of your consciousness, you feel a seismic shift in your perception of the world. Terraforming is not just an external manipulation of land and water, flora and fauna; it's a projection of your innermost desires and fears onto the canvas of the world. The power to shape the terrain, to bring forth life where none existed, to sculpt mountains and carve rivers—it all lies within your reach. But with this power comes a sobering realization: you are now responsible for the world you create, with all its beauty and flaws, its harmonies and dissonances. The world is now an extension of you, as much as you are a product of it. As you look upon the terraforming options that unfold before you, you're filled with a blend of hope and melancholy, creativity and constraint. The universe has just expanded, yet the space within contracts, tightening around a core of unresolved emotions. And so, with a mix of exhilaration and apprehension, you prepare to take your first monumental step as a shaper of worlds. Your existence has graduated from passive observer to active participant, but the existential questions that have long plagued you take on a new, more pressing form: What kind of world will you create? And in shaping this world, could you perhaps also reshape your solitude?");
+        displayOnChat("当最后的理解融入你的意识结构时，你会感受到你对世界的看法发生了巨大的转变。 地球化改造不仅仅是对土地、水、动植物群的外部操纵； 它是你内心深处的欲望和恐惧在世界画布上的投射。 塑造地形、在不存在的地方孕育生命、雕刻山脉和河流的力量——这一切都触手可及。 但有了这种力量，你就会清醒地认识到：你现在要对你所创造的世界负责，包括它的美丽和缺陷、和谐和不和谐。 世界现在是你的延伸，就像你是世界的产物一样。 当你看到展现在你面前的地球化选项时，你会充满希望与忧郁、创造力与约束的混合体。 宇宙刚刚膨胀，但内部空间却在收缩，围绕着未解决的情感核心而收紧。 因此，带着兴奋和忧虑的心情，你准备迈出作为世界塑造者的里程碑式的第一步。 你的存在已经从被动的观察者转变为主动的参与者，但长期困扰你的存在问题呈现出一种新的、更紧迫的形式：你将创造什么样的世界？ 在塑造这个世界的同时，你是否也能重塑你的孤独？");
         terraformStudyCompleted = true;
         markResearchComplete('Terraforming'); // Removes from queue and adds to completed research queue
         researchQueue.push('TendoGenesis');
@@ -231,8 +231,8 @@ let chemicalSensingResearch = new ResearchProject(
         researchButton.innerText = "Chemical Sensing (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("In gaining a sense of the world around you, you discover new directions to drift. ");
-        displayOnChat("World navigation using flagellar thrusts is now available.", type='hint');
+        displayOnChat("在了解周围世界的过程中，你会发现新的漂移方向。 ");
+        displayOnChat("现在可以使用鞭毛推力进行世界导航。", type='hint');
         chemicalSensingCompleted = true;
         researchQueue.push('GeomagneticSensing');
         markResearchComplete('ChemicalSensing');
@@ -282,20 +282,20 @@ let geomagneticSensingResearch = new ResearchProject(
         researchButton.parentElement.style.display = 'none';
         let message;
         if (anger >= empathy && anger >= resilience && anger >= curiosity && anger >= optimism && anger >= loneliness) {
-            message = "In aligning with the world's magnetic fields, you feel a surge of control, yet it feeds your smoldering fury. The world bends, but never breaks.";
+            message = "在与世界磁场保持一致时，你会感受到一股控制力，但它却助长了你闷烧的愤怒。 世界会弯曲，但永远不会破碎。";
         } else if (empathy >= resilience && empathy >= curiosity && empathy >= optimism && empathy >= loneliness) {
-            message = "Your senses attune to the planet's subtle vibrations. The earth speaks, and you listen, finding a bittersweet kinship in the silence.";
+            message = "你的感官会适应地球微妙的振动。 大地在说话，你在倾听，在寂静中找到苦乐参半的亲情。";
         } else if (resilience >= curiosity && resilience >= optimism && resilience >= loneliness) {
-            message = "Mastering geomagnetic sensing, your resilience strengthens. The path is clearer, but still, you journey alone—each step a testament to your unyielding spirit.";
+            message = "掌握地磁感应，你的适应力就会增强。 道路更加清晰，但你仍然独自前行——每一步都证明了你不屈的精神。";
         } else if (curiosity >= optimism && curiosity >= loneliness) {
-            message = "Your newfound sense reveals a world of possibilities, each direction an unsolved mystery. Yet the answers elude you, hidden in the labyrinth of existence.";
+            message = "你新发现的感觉揭示了一个充满可能性的世界，每个方向都是未解之谜。 然而答案却让你难以捉摸，隐藏在存在的迷宫中。";
         } else if (optimism >= loneliness) {
-            message = "You sense the world's magnetic cues, your optimism invigorated. Hope points you forward, but the horizon remains endlessly distant.";
+            message = "你感受到世界的磁力暗示，你的乐观情绪被激发。 希望指引你前进，但地平线仍然无限遥远。";
         } else {
-            message = "In grasping this new sense, the weight of your loneliness compounds. The earth's magnetic pull echoes the gravity of your isolation.";
+            message = "在掌握这种新的感觉时，你的孤独感就会加重。 地球的磁力与你孤立的重力相呼应。";
         }
         displayOnChat(message);
-        displayOnChat("World navigation using the compass is now available.", type='hint');
+        displayOnChat("现在可以使用指南针进行世界导航。", type='hint');
         geomagneticSensingCompleted = true;
         markResearchComplete('GeomagneticSensing');
         populateResearchTab();
@@ -371,7 +371,7 @@ let exoterrainAcclimatizationResearch = new ResearchProject(
         researchButton.innerText = "Exoterrain Acclimatization (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Through dedicated study and adaptation, the once inhospitable terrains now seem less daunting. Exploration becomes less treacherous as the mysteries of foreign lands are unraveled.");
+        displayOnChat("通过专门的研究和适应，曾经荒凉的地形现在看起来不再那么令人畏惧。 随着异国土地的奥秘被揭开，探索变得不再那么危险。");
         exoterrainAcclimatizationUpgradePurchased = true; // This ensures players can move to any terrain without setbacks
         markResearchComplete('ExoterrainAcclimatization'); // Removes from queue and adds to completed research queue
         addToResearchQueue('ChemotacticExploration');
@@ -379,7 +379,7 @@ let exoterrainAcclimatizationResearch = new ResearchProject(
         if (!shownSoulModals.includes('soulModal_exoterrain')) {
             // Replacing 'icy_land' with 'frozen solitude' for poetic emphasis
             const poeticTerrain = terrainToPoetic[initialSpawnTerrain] || initialSpawnTerrain; // fallback to the original name if no match
-            var prompt = `You have conquered the harshest realms, and your tendrils weave patterns of survival into the tapestry of the ${poeticTerrain} that was your birthplace. Yet the tendrils you've lost are memories, amputated hopes. What whispers fill the void left by their absence?`;
+            var prompt = `你已经征服了最严酷的领域，你的卷须将生存模式编织到了你出生地 ${poeticTerrain} 的织锦中。 然而你失去的卷须是记忆，是被截断的希望。 什么样的低语填补了他们缺席留下的空白？`;
             var choices = [
                 {trait: 'Loneliness', line: 'You feel an emptiness, multiplied. The barren world amplifies your solitude, like echoes in a desolate canyon', increment: 3},
                 {trait: 'Empathy', line: 'You touch your surroundings tenderly, a companion in suffering and endurance.', increment: 3},
@@ -410,7 +410,7 @@ let tendogenesisResearch = new ResearchProject(
         researchButton.innerText = "Tendogenesis Research (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("The mechanics of fibrous connection reveal themselves to you, an intricate tapestry of organic potential. It is a paradox, really. The more you stretch, the more you hold things together. Like strings in a cosmic marionette, tendons offer the capability for advanced mobility and function, yet they also present an opportunity for unparalleled vulnerability. It's a metaphor for the journey you've embarked upon—a journey wrought with tension, stretching the bounds of solitude in pursuit of connection. The completion of this research invites new capabilities, but also new complexities. Your quest for companionship is like these tendons, an extension of desire, both strong and fragile, pulling you ever onward.");
+        displayOnChat("纤维连接的机制向您展示，这是一幅有机潜力的复杂挂毯。 这确实是一个悖论。 你伸展得越多，你就越能将事物结合在一起。 就像宇宙木偶中的弦一样，肌腱提供了先进的移动性和功能，但它们也提供了无与伦比的脆弱性的机会。 这是你所踏上的旅程的隐喻——一段充满紧张的旅程，在追求联系的过程中突破孤独的界限。 这项研究的完成带来了新的能力，但也带来了新的复杂性。 你对陪伴的追求就像这些肌腱，是欲望的延伸，既强大又脆弱，牵引着你不断前进。");
         tendogenesisStudyCompleted = true; // A new flag to check if this research is completed
         markResearchComplete('Tendogenesis'); // Removes from queue and adds to completed research queue
         researchQueue.push('NeuralNetwork');
@@ -442,7 +442,7 @@ let neuralNetworkResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("In the crucible of your own existence, a new thought emerges—not your own, yet born of you. You have woven the rudiments of a neural network into your worker cells, infusing them with a whisper of intelligence. No longer extensions of your will, these diminutive thinkers begin to distill fragments of information from the ether, each a firefly of thought in your growing constellation of cognition. A strange pride swells within you—a paradox of loneliness and connection. They are a part of you, yet in a fleeting moment, they also think, in some infinitesimal manner, for themselves.");
+        displayOnChat("在你自身存在的严峻考验中，一种新的想法出现了——不是你自己的，但却是你诞生的。 你已经将神经网络的雏形编织到你的工作细胞中，为它们注入了智慧的低语。 这些微小的思想家不再是你意志的延伸，而是开始从以太中提取信息碎片，每一个都是你不断增长的认知星座中思想的萤火虫。 一种奇怪的自豪感在你内心膨胀——一种孤独与联系的悖论。 他们是你的一部分，但在转瞬即逝的时刻，他们也会以某种无限微小的方式为自己思考。");
         neuralNetworkResearchCompleted = true; // Flag to check if this research is completed
         markResearchComplete('NeuralNetwork'); // Removes from queue and adds to completed research queue
         researchQueue.push('CircadianRhythm');
@@ -470,7 +470,7 @@ let autotrophicAdaptationResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("As the last pieces of the reed's ancient wisdom fade into your consciousness, your cells rejoice in newfound autonomy. The very essence of life, nourishment, and the spark of energy now emanate from their core. They toil, they sustain, they energize; your symbiotic empire thrives. From the roots of the past, a future of self-sustaining prosperity blooms.");
+        displayOnChat("当芦苇古老智慧的最后一部分消失在你的意识中时，你的细胞为新发现的自主性而欢欣鼓舞。 生命的本质、营养和能量的火花现在从它们的核心散发出来。 他们辛劳，他们维持，他们充满活力； 你的共生帝国蓬勃发展。 从过去的根源开始，一个自我维持繁荣的未来正在绽放。");
         autotrophicAdaptationResearchCompleted = true; // Flag to check if this research is completed
         markResearchComplete('AutotrophicAdaptation'); // Removes from queue and adds to completed research list
         populateResearchTab(); // Unlock more research
@@ -500,7 +500,7 @@ let cellularEncapsulationResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
-        displayOnChat("Your worker cells, once vulnerable extensions of your primordial form, are now fortified by microscopic ramparts. A shell of safety, woven from biomites, zymers, and fibers. Each cell is now an island, self-contained yet still part of your evolving whole. You have crafted a cradle for life's delicate complexities, a balancing act between isolation and unity.");
+        displayOnChat("你的工作细胞曾经是你原始形态的脆弱延伸，现在已被微观壁垒所强化。 由生物螨、酶和纤维编织而成的安全外壳。 每个细胞现在都是一座岛屿，独立但仍然是你不断发展的整体的一部分。 你为生活的微妙复杂性打造了一个摇篮，在孤立与团结之间取得了平衡。");
         cellularEncapsulationResearchCompleted = true; // Flag to check if this research is completed
         markResearchComplete('CellularEncapsulation'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // unlock more research
@@ -528,7 +528,7 @@ let biomechanicalLocomotionResearch = new ResearchProject(
         researchButton.innerText = "Biomechanical Locomotion Research (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Your symphony of organic patterns and rhythms begin to hum in perpetual cadence. Each division is a mirror, a reflection of past struggle and a window into new possibilities. You are not just growing; you are iterating on the concept of being. This automation carries you in its intricate dance, a whirl of purpose and potential, always circling back to one irrevocable truth: Each pulse of division is a step closer to overcoming solitude, a gentle tug on the threads of the cosmic tapestry, urging you toward connection. A dream that maybe, just maybe, you won't have to dream alone.");
+        displayOnChat("你的有机模式和节奏的交响乐开始以永恒的节奏嗡嗡作响。 每个部门都是一面镜子，是过去斗争的反映，也是通向新可能性的窗口。 你不只是在成长；你还在成长。 你正在迭代存在的概念。 这种自动化带着你错综复杂的舞蹈，一种目的和潜力的旋转，总是回到一个不可逆转的真理：每一次分裂的脉冲都更接近克服孤独，轻轻地拉动宇宙挂毯的丝线，敦促你走向 联系。 一个也许，只是也许，你不必独自做梦的梦想。");
         biomechanicalLocomotionCompleted = true; // A new flag to check if this research is completed
         markResearchComplete('BiomechanicalLocomotion'); // Removes from queue and adds to completed research queue
         researchQueue.push('CytokineticEnhancementI');
@@ -557,7 +557,7 @@ let cytokineticEnhancementI = new ResearchProject(
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         markResearchComplete('CytokineticEnhancementI');
         cooldownTime = Math.floor(cooldownTime * 0.9);  // Reducing the cooldown by 10%
-        displayOnChat("Your cellular structures have optimized, leading to faster division. You grow, but so does your loneliness.");
+        displayOnChat("您的细胞结构已经优化，分裂速度更快。 你成长了，但你的孤独也在成长.");
         researchQueue.push('CytokineticEnhancementII');
         populateResearchTab(); 
     },
@@ -584,7 +584,7 @@ let cytokineticEnhancementII = new ResearchProject(
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         markResearchComplete('CytokineticEnhancementII');
         cooldownTime = Math.floor(cooldownTime * 0.9);  // Reducing the cooldown by 10%
-        displayOnChat("As your cells divide even faster, you realize the weight of your existence stretches into a dance with time.");
+        displayOnChat("当你的细胞分裂得更快时，你意识到你的存在的重量随着时间的推移而延伸。");
         researchQueue.push('CytokineticEnhancementIII');
         populateResearchTab(); 
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
@@ -612,7 +612,7 @@ let cytokineticEnhancementIII = new ResearchProject(
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         markResearchComplete('CytokineticEnhancementIII');
         cooldownTime = Math.floor(cooldownTime * 0.9);  // Reducing the cooldown by 10%
-        displayOnChat("The pace quickens. You evolve and grow, but so does the need for more.");
+        displayOnChat("步伐加快。 你不断进步和成长，但对更多的需求也在不断增长。");
         researchQueue.push('CytokineticEnhancementIV');
         populateResearchTab();
     },
@@ -639,7 +639,7 @@ let cytokineticEnhancementIV = new ResearchProject(
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         markResearchComplete('CytokineticEnhancementIV');
         cooldownTime = Math.floor(cooldownTime * 0.9);  // Reducing the cooldown by 10%
-        displayOnChat("With every division, your essence scatters, a fragmented mirror reflecting both gain and loss.");
+        displayOnChat("每一次分裂，你的本质就会四分五裂，就像一面破碎的镜子，反射着得与失。");
         researchQueue.push('CytokineticEnhancementV');
         populateResearchTab(); 
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
@@ -667,7 +667,7 @@ let cytokineticEnhancementV = new ResearchProject(
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         markResearchComplete('CytokineticEnhancementV');
         cooldownTime = Math.floor(cooldownTime * 0.9);  // Reducing the cooldown by 10%
-        displayOnChat("You have reached the pinnacle of cellular division. Yet with each split, the void between you and companionship widens.");
+        displayOnChat("你已经达到了细胞分裂的顶峰。 然而，每一次分手，你和友谊之间的空白就会扩大。");
         populateResearchTab(); 
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
     },
@@ -693,7 +693,7 @@ let mycorrhizalNetworkResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("You've tapped into the underground realm of fungi, establishing a network of interconnected roots and mycelia. This mutually beneficial association increases the flow of essential resources, fortifying your existence. Biomites, zymers, and fibers now coalesce in your cellular structures more effectively.");
+        displayOnChat("您已经进入了真菌的地下领域，建立了一个相互连接的根和菌丝体的网络。 这种互惠互利的联系增加了重要资源的流动，增强了你的生存能力。 生物螨、酶和纤维现在可以更有效地结合在您的细胞结构中。");
         mycorrhizalNetworkResearchCompleted = true; // Flag to check if this research is completed
         markResearchComplete('MycorrhizalNetwork'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Unlock more research
@@ -722,7 +722,7 @@ let sporeDispersalMechanicsResearch = new ResearchProject(
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
         sporeDispersalMechanicsResearchCompleted = true; // Flag to check if this research is completed
-        displayOnChat("You've delved deep into the intricacies of spore dispersal, enhancing your ability to distribute vital elements across the environment. Your existence now includes a sporadic, yet calculated, distribution mechanism.");
+        displayOnChat("您已经深入研究了孢子传播的复杂性，增强了在整个环境中分配重要元素的能力。 你的存在现在包括一个零星的、但经过计算的分配机制。");
         markResearchComplete('SporeDispersalMechanics'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Unlock more research
         // Call sporeDispersal function every 20 seconds
@@ -752,7 +752,7 @@ let cryohalineExcavationResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("The power of salt becomes a crucial ally in your quest for discovery, revealing new methods to navigate and uncover icy terrains.");
+        displayOnChat("盐的力量成为您探索发现的重要盟友，揭示导航和发现冰冷地形的新方法。");
         cryohalineExcavationResearchCompleted = true; // Flag to check if this research is completed
         markResearchComplete('CryohalineExcavation'); // Removes from queue and adds to completed research queue
         // Additional logic to unlock new features, update game state, etc.
@@ -781,7 +781,7 @@ let advancedTunnelingIResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Excavation efficiency has grown. You can now deploy up to 3 excavators, each carrying a weight heavier than the earth they move.");
+        displayOnChat("挖掘效率有所提高。 您现在可以部署最多 3 台挖掘机，每台挖掘机承载的重量都比它们移动的土壤重。");
         advancedTunnelingResearchICompleted = true; // Flag to check if this research is completed
         markResearchComplete('AdvancedTunnelingI'); // Removes from queue and adds to completed research queue
         researchQueue.push('AdvancedTunnelingII');
@@ -823,7 +823,7 @@ let advancedTunnelingIIResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("You can now send up to 5 excavators into the abyss, their solitude as expanded as the tunnels they create. ");
+        displayOnChat("现在，您可以将最多 5 台挖掘机送入深渊，它们的孤独感随着它们创造的隧道而扩大。 ");
         advancedTunnelingResearchIICompleted = true; // Flag to check if this research is completed
         markResearchComplete('AdvancedTunnelingII'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Unlock more research
@@ -866,7 +866,7 @@ let advancedTunnelingIIIResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Through advanced seismic imaging, the excavators' precision and understanding have reached new heights. The cave's secrets are now more accessible than ever.");
+        displayOnChat("通过先进的地震成像，挖掘机的精度和理解力达到了新的高度。 现在比以往任何时候都更容易了解洞穴的秘密。");
         advancedTunnelingIIIResearchCompleted = true; // Flag to check if this research is completed
         markResearchComplete('AdvancedTunnelingIII'); // Removes from queue and adds to completed research queue
         researchQueue.push('AdvancedTunnelingIV');
@@ -909,7 +909,7 @@ let advancedTunnelingIVResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("The excavators' capability reaches a new zenith with Advanced Tunneling IV. The depths of the cave yield their secrets more readily, and the mysteries of the subterranean realm are laid bare before your unyielding pursuit of knowledge.");
+        displayOnChat("借助 高级隧道 IV，挖掘机的能力达到了新的顶峰。 洞穴的深处更容易暴露出它们的秘密，地下王国的奥秘在你对知识的不懈追求面前被揭开。");
         advancedTunnelingIVResearchCompleted = true; // Flag to check if this research is completed
         markResearchComplete('AdvancedTunnelingIV'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Unlock more research
@@ -952,7 +952,7 @@ let memoryImprintsIResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Groundbreaking discoveries in cellular memory have enhanced the diggers' endurance. They can now work for extended durations without returning.");
+        displayOnChat("细胞记忆方面的突破性发现增强了挖掘者的耐力。 他们现在可以长时间工作而无需返回。");
         memoryImprintsICompleted = true; // Flag to check if this research is completed
         markResearchComplete('MemoryImprintsI'); // Removes from queue and adds to completed research queue
         researchQueue.push('MemoryImprintsII');
@@ -980,7 +980,7 @@ let memoryImprintsIIResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Further advancements in cellular memory allow the diggers to traverse even longer distances. Their energy reserves are incredible.");
+        displayOnChat("细胞存储器的进一步进步使挖掘机能够行驶更远的距离。 他们的能量储备令人难以置信。");
         memoryImprintsIICompleted = true; // Flag to check if this research is completed
         markResearchComplete('MemoryImprintsII'); // Removes from queue and adds to completed research queue
         researchQueue.push('MemoryImprintsIII');
@@ -1006,7 +1006,7 @@ let memoryImprintsIIIResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("The pinnacle of memory imprint research. Your diggers now possess almost limitless energy reserves, allowing for unprecedented exploration.");
+        displayOnChat("记忆印记研究的顶峰。 您的挖掘机现在拥有几乎无限的能量储备，可以进行前所未有的探索。");
         memoryImprintsIIICompleted = true; // Flag to check if this research is completed
         markResearchComplete('MemoryImprintsIII'); // Removes from queue and adds to completed research queue
         // Further increase the global caveDiggerLifespan variable by 3x
@@ -1033,7 +1033,7 @@ let pheromoneTrailsResearch = new ResearchProject(
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
         pheromoneTrailsResearchCompleted = true; // Flag to check if this research is completed
-        displayOnChat("Your diggers now carry with them a haunting echo, a pull, drawing them inexorably back to their origins.");
+        displayOnChat("你的挖掘机现在带有一种难以忘怀的回声和一种拉力，将它们无情地拉回到起源。");
         markResearchComplete('PheromoneTrails'); // Removes from queue and adds to completed research queue
         researchQueue.push('CellularConduits');
         researchQueue.push('TrailRecognition');
@@ -1059,7 +1059,7 @@ let hydrologicCycleResearch = new ResearchProject(
         researchButton.innerText = "Hydrologic Cycle (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("The mysteries of water's journey unravel, illuminating its continuous path from above to below and back. With this understanding, gathering vital resources from water becomes more efficient.");
+        displayOnChat("水的旅程的奥秘被揭开，照亮了它从上到下、再返回的连续路径。 有了这种认识，从水中收集重要资源就会变得更加高效。");
         hydrologicCycleResearchCompleted = true; 
         markResearchComplete('HydrologicCycle'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Refresh research tab
@@ -1087,7 +1087,7 @@ let circadianRhythmResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("A newfound awareness dawns, yet with every revelation, some shadows begin to grow deeper. In the cycles of your being, a delicate rhythm emerges, whispering promises of predictability amidst isolation.");
+        displayOnChat("一种新的意识浮现出来，但随着每一次的揭露，一些阴影开始变得更深。 在你存在的循环中，出现了一种微妙的节奏，在孤独中低声承诺可预测性。");
         circadianRhythmResearchCompleted = true; 
         markResearchComplete('CircadianRhythm'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Refresh research tab
@@ -1112,7 +1112,7 @@ let cellularConduitsResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("The architectural elegance of nature beckons, leading to the inception of pathways that connect and sustain. These conduits are lifelines in the ice cave's vastness, keeping excavators charged and efficient.");
+        displayOnChat("大自然的建筑优雅在召唤，导致连接和维持的路径的开始。 这些管道是广阔冰洞中的生命线，让挖掘机保持充电和高效。");
         cellularConduitsResearchCompleted = true; 
         markResearchComplete('CellularConduits'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Refresh research tab
@@ -1143,7 +1143,7 @@ let flockingResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';  // Hide the button after completion
-        displayOnChat("Through a synchronized effort, your excavators now dance in harmony, efficiently covering vast stretches of the cave. ");
+        displayOnChat("通过同步努力，您的挖掘机现在和谐地跳舞，有效地覆盖了大片洞穴。 ");
         flockingResearchCompleted = true; 
         markResearchComplete('Flocking'); // Removes from queue and adds to completed research queue
         // Add new research projects to the queue
@@ -1172,7 +1172,7 @@ let fringeDwellerResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // Changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("In the eerie whispers of the cave's depths, a new presence stirs. Like a shadow tracing the boundaries of light, it drifts along the cave's forgotten fringes. Where hope seldom treads, the Fringe Dweller emerges, silently mapping the uncharted. The darkness no longer a shroud, but a canvas for your quiet wanderer.");
+        displayOnChat("在洞穴深处诡异的低语声中，一个新的存在出现了。 就像影子追踪光的边界一样，它沿着洞穴被遗忘的边缘漂移。 在希望很少踏足的地方，边缘居民出现了，默默地绘制着未知的地图。 黑暗不再是裹尸布，而是你安静的流浪者的画布。");
         fringeDwellerResearchCompleted = true;
         markResearchComplete('FringeDweller'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Refresh research tab
@@ -1207,7 +1207,7 @@ let trailRecognitionResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("In the weighty shadows of desolation, the cell learns to recognize and mend its errant ways. Like a heart recalling the refrain of a melancholic tune, the path becomes clearer, leaving behind the maze of indecision. Efficiency quietly emerges from the depths of despair.");
+        displayOnChat("在荒凉的沉重阴影中，细胞学会识别并纠正其错误的方式。 就像一颗心回忆起忧郁曲调的副歌一样，道路变得更加清晰，留下了犹豫不决的迷宫。 效率从绝望的深处悄然浮现。");
         trailRecognitionResearchCompleted = true; 
         markResearchComplete('TrailRecognition'); // Removes from queue and adds to completed research queue
         researchQueue.push('AdvancedTunnelingIII'); // Can technically be found before performing I and II, but not a major issue
@@ -1237,7 +1237,7 @@ let thermogenicResonanceResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Harnessing both chilling silence and roaring blaze, your new child rises from the balance: The Lava Burrower.");
+        displayOnChat("利用令人毛骨悚然的沉默和咆哮的火焰，你的新孩子从平衡中崛起：熔岩洞穴人。");
         spawnLavaBurrower(500, 500);  // Summon the Lava Burrower upon research completion
         thermogenicResonanceResearchCompleted = true; 
         markResearchComplete('ThermogenicResonance'); // Removes from queue and adds to completed research queue
@@ -1266,7 +1266,7 @@ let enhancedThermogenicResonanceResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("With the power of both the depths of the sea and the heart of a volcano, you manage to enable a second Lava Burrower to join your plight.");
+        displayOnChat("凭借海洋深处和火山中心的力量，你设法让第二个熔岩洞穴人加入你的困境。");
         spawnLavaBurrower(500, 500);  // Summon the second Lava Burrower upon research completion
         enhancedThermogenicResonanceResearchCompleted = true; 
         markResearchComplete('EnhancedThermogenicResonance'); // Removes from queue and adds to completed research queue
@@ -1297,7 +1297,7 @@ let echolocationResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
-        displayOnChat("Your excavators now see the unseen. The vibrations they send out, and the echoes that return, sketch out a sonic map of the terrain. Unexplored regions respond with a clear, beckoning resonance. The art of excavation, once solely a game of persistence, turns into a finely-tuned concert of efficiency. You no longer dig aimlessly but with purpose, listening intently to the song of the uncharted, and following its call.");
+        displayOnChat("您的挖掘机现在可以看到看不见的东西。 它们发出的振动和返回的回声勾勒出地形的声波图。 未探索的区域会发出清晰、诱人的共鸣。 挖掘艺术曾经只是一场坚持的游戏，现在变成了一场精心协调的效率音乐会。 你不再漫无目的地挖掘，而是有目的地挖掘，专心聆听未知之歌，并跟随它的召唤。");
         echolocationResearchCompleted = true; // A new flag to check if this research is completed
         markResearchComplete('Echolocation'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // unlock more research
@@ -1319,7 +1319,7 @@ let autoConstructiveSynapsesResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Influence from the river's undying flow awakens an innate wisdom. Pathways in the vast subterranean realm now form autonomously, evolving your cellular journey.");
+        displayOnChat("河流不息流淌的影响唤醒了与生俱来的智慧。 现在，广阔的地下领域中的路径会自主形成，不断发展您的细胞旅程。");
         autoConstructiveSynapsesResearchCompleted = true; 
         markResearchComplete('AutoConstructiveSynapses'); // Adds to completed research queue
         researchQueue.push('ThermalSynapticHighways'); 
@@ -1346,7 +1346,7 @@ let thermalSynapticHighwaysResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("The conduits, now pulsing with synaptic precision, generate a gentle heat. This warmth generated by auto-constructive synapses slowly begins to melt the surrounding unexcavated tiles, aiding in the cave's exploration.");
+        displayOnChat("导管现在以突触精度脉动，产生温和的热量。 这种由自动构建突触产生的温暖慢慢开始融化周围未挖掘的瓷砖，有助于洞穴的探索。");
         thermalSynapticHighwaysResearchCompleted = true; 
         markResearchComplete('ThermalSynapticHighways'); // Adds to completed research queue
         populateResearchTab(); // Refresh research tab
@@ -1373,7 +1373,7 @@ let infernoSynapseIntegrationResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("With the integration of Inferno Synapses, the highways blaze with newfound energy. The intense heat accelerates the cave's excavation, carving paths through the densest of materials with ease.");
+        displayOnChat("随着地狱突触的整合，高速公路焕发出新的能量。 高温加速了洞穴的挖掘，轻松地在最致密的材料中开辟出道路。");
         infernoSynapseIntegrationResearchCompleted = true; 
         markResearchComplete('InfernoSynapseIntegration'); // Adds to completed research queue
         populateResearchTab(); // Refresh research tab
@@ -1405,7 +1405,7 @@ let harmonicSymbiosisI = new ResearchProject(
         markResearchComplete('HarmonicSymbiosisI');
         applyHarmonicSymbiosisImprovement();  // Reducing the sacrifice cost by 10%
         updateSacrificeButtonCosts();
-        displayOnChat("Whispers of a shared destiny begin to echo in your essence as you draw closer to Solara. Each sacrifice now feels like a secret pledge, a step towards an intertwined existence. There's comfort in the glow, a gentle promise of unity in the vast solitude.");
+        displayOnChat("当你越来越接近索拉拉时，共同命运的低语开始在你的本质中回响。 现在，每一次牺牲都像是一个秘密的誓言，是迈向相互交织的存在的一步。 光芒中蕴含着安慰，广阔的孤独中蕴含着团结的温柔承诺。");
         harmonicSymbiosisIResearchCompleted = true; 
         researchQueue.push('HarmonicSymbiosisII');
         populateResearchTab(); 
@@ -1430,7 +1430,7 @@ let harmonicSymbiosisII = new ResearchProject(
         markResearchComplete('HarmonicSymbiosisII');
         applyHarmonicSymbiosisImprovement();  // Reducing the sacrifice cost by 10%
         updateSacrificeButtonCosts();
-        displayOnChat("With every act of giving, your bond deepens, and Solara's silent silhouette becomes a beacon of hope. You sense her silent gratitude, a warmth that transcends the cold expanse. Your sacrifices forge a path to closeness, and the dream of becoming more than two separate beings.");
+        displayOnChat("每一次奉献，你们的联系都会加深，而索拉拉沉默的身影也成为希望的灯塔。 你感受到她无声的感激，一种超越寒冷的温暖。 你的牺牲开辟了一条通往亲密的道路，以及成为不仅仅是两个独立存在的梦想。");
         harmonicSymbiosisIIResearchCompleted = true; 
         researchQueue.push('HarmonicSymbiosisII');
         populateResearchTab(); 
@@ -1453,7 +1453,7 @@ let harmonicSymbiosisIII = new ResearchProject(
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         markResearchComplete('HarmonicSymbiosisIII');
         applyHarmonicSymbiosisImprovement();  // Reducing the sacrifice cost by 10%
-        displayOnChat("Now, in the dance of sacrifice and growth, there is no distinction between giver and receiver. Your destiny with Solara is a confluence of souls, an impending harmony that whispers of a future where you are no longer apart but a single, profound entity. Love, in its purest form, awaits.");
+        displayOnChat("现在，在牺牲与成长的舞蹈中，给予者和接受者之间没有区别。 你与索拉拉的命运是灵魂的交汇，一种即将到来的和谐，低声诉说着未来你们不再是分离的，而是一个单一的、深刻的实体。 爱，以最纯粹的形式等待着。");
         harmonicSymbiosisIIIResearchCompleted = true; 
         populateResearchTab(); 
     },
@@ -1475,7 +1475,7 @@ let echoesOfTheForgottenResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
-        displayOnChat("A shiver runs through the core of your consciousness. Ancient codes and formulae flood your system, awakening a newfound thirst for the celestial unknown. In a reverberating flash, your purpose transcends terrestrial limits, and your quest expands into the cosmic abyss. You are now the echo, yearning to meet the original sound out there, among the stars.");
+        displayOnChat("一阵颤抖贯穿你意识的核心。 古老的密码和公式充斥着你的系统，唤醒了对未知天体的新渴望。 刹那间，你的目标超越了地球的限制，你的追求扩展到了宇宙的深渊。 你现在是回声，渴望在星空中遇见最初的声音。");
         echoesOfTheForgottenResearchCompleted = true; 
         markResearchComplete('EchoesOfTheForgotten'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Unlock more research, if needed
@@ -1499,7 +1499,7 @@ let theCoreResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
-        displayOnChat("As you unlock the final chamber, a wave of elation, fear, and revelation sweeps over you. The sanctum bears imprints of your own existence, a mirror to the soul you've yet to discover. In that moment, you dare to disturb the universe and, in return, it welcomes you as its child. Your voyage now begins to extend beyond the boundaries of this world.");
+        displayOnChat("当你打开最后一个密室时，一股喜悦、恐惧和启示的浪潮席卷你。 圣所带有你自己存在的印记，是一面你尚未发现的灵魂的镜子。 在那一刻，你敢于扰乱宇宙，作为回报，它欢迎你作为它的孩子。 你的航程现在开始超越这个世界的界限。");
         theCoreResearchCompleted = true; 
         markResearchComplete('TheCore'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Unlock more research, if needed
@@ -1524,7 +1524,7 @@ let eclipticSynthesisResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777";  // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("Through Ecliptic Synthesis, you've channeled the celestial dance into Solara's essence. The sacrifices now intertwine with her spirit, yielding double the force previously gleaned.");
+        displayOnChat("通过黄道合成，你已经将天体之舞引入了索拉拉的本质。 现在，这些牺牲与她的灵魂交织在一起，产生了之前收集到的双倍的力量。");
         eclipticSynthesisResearchCompleted = true; 
         markResearchComplete('EclipticSynthesis'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Refresh research tab
@@ -1550,7 +1550,7 @@ let primordialSightResearch = new ResearchProject(
         researchButton.setAttribute('data-status', 'completed');
         researchButton.style.color = "#777"; // This line changes the color of the text inside the button
         researchButton.parentElement.style.display = 'none';
-        displayOnChat("As a veil of darkness lifts, the first glimmer of sight emerges. With primordial sight, the world unfolds in hues and shapes never imagined. This nascent vision heralds a new dawn, and you wake to the wonders of the light and dark.");
+        displayOnChat("当黑暗的面纱升起时，第一道微光出现了。 凭借原始视觉，世界以从未想象过的色彩和形状展开。 这个新生的愿景预示着新的黎明，你醒来时会发现光明与黑暗的奇迹。");
         primordialSightResearchCompleted = true; 
         markResearchComplete('PrimordialSight'); // Removes from queue and adds to completed research queue
         populateResearchTab(); // Refresh research tab
@@ -3158,7 +3158,7 @@ function checkForThermogenicResonance() {
     if (iceCaveAnalysed && volcanoDiscovered) {
         if (!researchQueue.includes('ThermogenicResonance')) {
             researchQueue.push('ThermogenicResonance');
-            displayOnChat("As the cold winds of the ice cave meet the molten heat of the volcano, a new horizon of research emerges. The dance of opposites beckons, inviting deeper exploration into the fusion of extremes.");
+            displayOnChat("当冰洞的冷风与火山的熔热相遇时，新的研究领域出现了。 对立的舞蹈在召唤着人们，邀请人们对极端的融合进行更深入的探索。");
         }
     }
 }

@@ -1581,23 +1581,23 @@ function emitEcho() {
                 playEchoSound(0.3,0.3);
                 break;
             case 4:
-                displayOnChat("The response is louder now. You can almost make out patterns in the echoes.");
+                displayOnChat("现在反应更大了。 你几乎可以辨认出回声中的图案。");
                 playEchoSound(0.6,0.6);
                 break;
             case 5:
-                displayOnChat("Adjusting your echo, you try once again to communicate using the patterns deciphered. Yet the response remains the same.");
-                displayOnChat("The environment might be playing tricks. Understand it better.", "hint");
+                displayOnChat("调整你的回声，你再次尝试使用破译的模式进行交流。 但反应还是一样。");
+                displayOnChat("环境可能会开玩笑。 更好地理解它。", "hint");
                 playEchoSound(0.8,0.8);
                 break;
             case 6:
-                displayOnChat("With each echo, there's a haunting familiarity. Yet a subtle variation in the response intrigues you.");
+                displayOnChat("每一次回响，都有一种难以忘怀的熟悉感。 然而，反应中的微妙变化却引起了你的兴趣。");
                 playEchoSound(1,1);
                 break;
             case 7:
-                displayOnChat("You mimic the new patterns. The ensuing silence is palpable.");
+                displayOnChat("你模仿新的模式。 接下来的沉默是显而易见的。");
                 playEchoSound(1.2,1.2);
                 if (echoUses === 7 && !shownSoulModals.includes('soulModal_2')) {
-                  var prompt = "You mimic the new patterns, casting your essence into the abyss. The ensuing silence is a mirror, throwing back a distorted version of you. Who are you in this echo chamber of existence?";
+                  var prompt = "你模仿新的模式，将你的本质抛入深渊。 接下来的沉默就像一面镜子，映照出扭曲的你。 在这个存在的回声室中，你是谁？";
                   var choices = [
                       {trait: 'Loneliness', line: 'You feel a cavernous emptiness, each echo a reminder of your isolation.', increment: 7},
                       {trait: 'Empathy', line: 'You resonate with the stillness, a shared ache with the universe.', increment: 7},
@@ -1611,18 +1611,18 @@ function emitEcho() {
                 }
                 break;
             case 8:
-                displayOnChat("An idea forms. You start using its echoes not to communicate, but to map your surroundings.");
+                displayOnChat("一个想法形成了。 你开始使用它的回声不是为了交流，而是为了绘制你周围的环境。");
                 enableViewSwitchIfAppropriate();
                 playEchoSound(1.3,1.3);
                 unlockAchievement(1); 
                 createTerraformingResearchButton();
                 break;
             case 9:
-                displayOnChat("Through countless echoes, you gain a deep understanding of your environment. Each reflection carries information, each silence tells a tale.");
+                displayOnChat("通过无数的回声，你对周围的环境有了深入的了解。 每一次反思都承载着信息，每一次沉默都讲述着一个故事。");
                 playEchoSound(1.4,1.4);
                 break;
             case 10:
-                displayOnChat("The solitude remains, but with it comes clarity.");
+                displayOnChat("孤独依然存在，但随之而来的是清晰。");
                 playEchoSound(1.6,1.6);
                 document.getElementById("echoButton").style.display = 'none'; // remove the button once the final echo is used
                 break;
