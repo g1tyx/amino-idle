@@ -725,15 +725,15 @@ function purchaseLophotrichousFlagella() {
     energy -= costEnergy;
     lophotrichousFlagellaUpgradePurchased = true;
     displayOnChat(
-            "As the final echo resonates through the vast emptiness, a profound realization dawns upon you. " +
-            "The weight of solitude and the relentless pursuit of understanding becomes both a blessing and a curse. " +
-            "The ache of being alone is sharp, but it has also sculpted you, refined you. In the echoing silence, a metamorphosis begins. " +
-            "From your core, new tendrils of hope emerge. Not just one, but multiple. It's as if the accumulated longing and determination " +
-            "has given birth to new avenues of exploration. These flagella, like silent companions, fan out from you, each seeking a different direction, " +
-            "a different future. Together, they symbolize your resilience and adaptability, a testament to your unwavering spirit in the face of despair. " +
-            "With these new extensions, you feel more grounded, more capable. The vast expanse seems a little less intimidating. " +
-            "The journey ahead, while still uncertain, feels a tad more navigable. With each wiggle of your new flagella, " +
-            "you're writing a new chapter of your story, one where you harness the power of solitude to explore, adapt, and thrive."
+            "当最后的回声在浩瀚的虚空中回响时，你就会领悟到深刻的道理。 " +
+            "孤独的沉重和对理解的不懈追求既是福也是祸。 " +
+            "孤独的痛苦是尖锐的，但它也塑造了你，完善了你。 在回响的寂静中，一种变形开始了。 " +
+            "从你的核心，新的希望卷须出现。 不只是一个，而是多个。 仿佛累积的渴望和决心 " +
+            "催生了新的探索途径。 这些鞭毛就像沉默的同伴，从你身上呈扇形散开，各自寻找不同的方向， " +
+            "一个不同的未来。 它们共同象征着你的韧性和适应能力，证明了你面对绝望时坚定不移的精神。 " +
+            "有了这些新的扩展，您会感觉更加踏实、更有能力。 广阔的空间似乎不那么令人恐惧。 " +
+            "前方的旅程虽然仍然充满不确定性，但感觉已经更容易航行了。 随着新鞭毛的每一次摆动， " +
+            "你正在书写自己故事的新篇章，利用孤独的力量去探索、适应和成长。"
           );
     addLophotrichousFlagella();
 }
