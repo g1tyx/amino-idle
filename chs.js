@@ -75,7 +75,7 @@ var cnItems = {
     "Available Prestige Points:": "可用声望点：",
     "Awakening of the Soul: In a universe of echoes, you found your voice.": "灵魂的觉醒：在共鸣的宇宙中，你找到了你的声音。",
     "Background Brightness:": "背景亮度：",
-    "Cave View": "洞穴景观",
+    "Cave View": "洞穴视图",
     "Celestial Division: None, breathed the light, faint and faery, of the stars, and two.": "天界：没有，呼吸着星星的微弱仙光，还有两个。",
     "Cell View": "细胞视图",
     "Cells available:": "可用细胞：",
