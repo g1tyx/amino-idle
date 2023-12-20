@@ -346,7 +346,7 @@ let chemotacticExplorationResearch = new ResearchProject(
         researchButton.innerText = "Chemotactic Exploration (Completed)";
         researchButton.setAttribute('data-status', 'completed');
         researchButton.parentElement.style.display = 'none';
-        let message = "With the mastery of chemotactic exploration, your cell has gained the ability to autonomously navigate the world, driven by chemical gradients and innate biological instincts.";
+        let message = "通过掌握趋化探索，您的细胞已获得在化学梯度和先天生物本能的驱动下自主导航世界的能力.";
         displayOnChat(message);
         chemotacticExplorationCompleted = true;
         enableAutomatedExploration(); 

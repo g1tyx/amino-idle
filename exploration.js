@@ -1758,7 +1758,7 @@ function explore(x, y) {
         // Update fog-of-war to reveal the new position
         updateFogOfWar(playerPosition.x, playerPosition.y);
         // Initialize a default story message
-        let story = "You continue your journey, but nothing significant catches your attention.";
+        let story = "你继续你的旅程，但没有什么重要的事情引起你的注意.";
         // Check the terrain type and any special decorations on this tile
         let terrainType = terrainGrid[tileY][tileX];
         terrainCounts[terrainType]++;
