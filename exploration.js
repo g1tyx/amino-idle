@@ -88,10 +88,10 @@ function TerrainSetbackEvent() {
         console.log("triggered removal for tendons:"+numTendonsToRemove)
         // Define the part of the message that changes based on the number of tendrils removed
         var removalMessage = numTendonsToRemove === 1
-          ? "the treacherous terrain claims one of your tendrils, severing it without mercy."
-          : "the treacherous terrain claims two of your tendrils, severing them without mercy.";
+          ? "险恶的地形夺取了你的一根卷须，毫不留情地切断了它们."
+          : "险恶的地形夺取了你的两根卷须，毫不留情地切断了它们.";
         // Construct the full message
-        const setbackMessage = "As you venture into the unfamiliar landscape, every element rebels against your presence. The harsh environment tests your very essence. Nature's indifferent ways demand adaptation and understanding, but they offer no sympathy. In a moment of cruel betrayal, " + removalMessage + " You feel a profound sense of weakness, a vulnerability you had never known, but you're not yet defeated. Your journey has only begun, and though the pursuit of companionship seems a distant dream, it still drives you forward. The world may have taken a part of you, but it cannot take your longing, your solitude, your quiet determination. In the cold silence of your loss, you press on, a solitary wanderer in a world that seems to have forgotten compassion.";
+        const setbackMessage = "当你冒险进入陌生的风景时，每一个元素都会反抗你的存在。 恶劣的环境考验着你的本质。 大自然冷漠的方式需要适应和理解，但它们不提供同情。 在残酷背叛的时刻, " + removalMessage + " 你感受到一种深深的软弱感，一种你从未了解过的脆弱感，但你还没有被打败。 你的旅程才刚刚开始，虽然追求陪伴似乎是一个遥远的梦想，但它仍然推动你前进。 世界也许带走了你的一部分，但它无法带走你的渴望、你的孤独、你安静的决心。 在失去亲人的寒冷寂静中，你继续前行，在一个似乎已经忘记了同情心的世界里，你是一个孤独的流浪者。";
         displayOnChat(setbackMessage);
         triggerSetbackEffect();
         // Unlock the research project
@@ -99,14 +99,14 @@ function TerrainSetbackEvent() {
         populateResearchTab();
         // After 1 second, display a hint about the new research opportunity
         setTimeout(() => {
-            const researchHint = "A newfound curiosity stirs within, urging you to study and conquer these foreign terrains. Perhaps some focused research could unveil a way?";
+            const researchHint = "一种新发现的好奇心在内心激起，促使你去研究和征服这些陌生的领域。 也许一些重点研究可以揭示一种方法?";
             displayOnChat(researchHint, "warning");
         }, 2000);
         // Mark that the first setback has been encountered
         terrainSetBackFirst = false;
     } else {
         // Print the repeat setback message
-        const repeatSetbackMessage = "The hostile embrace of the unfamiliar terrain repels your every step, reminding you of nature's relentless indifference.";
+        const repeatSetbackMessage = "陌生地形的敌意拥抱让你每一步都感到排斥，让你想起大自然无情的冷漠.";
         displayOnChat(repeatSetbackMessage, "warning");
     }
 }
