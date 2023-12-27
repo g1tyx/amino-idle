@@ -922,7 +922,7 @@ function resetTutorials() {
 }
 
 document.getElementById("resetTutorials").addEventListener("click", function() {
-    if (confirm("Are you sure you want to reset all tutorials?")) {
+    if (confirm("您确定要重置所有教程吗？")) {
         resetTutorials();
     }
 });

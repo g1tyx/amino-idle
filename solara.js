@@ -516,7 +516,7 @@ function unlockVisionEvolution() {
             solaraGlyph.style.backgroundColor = '';
         }, 300);
         // Display message for lacking upgrades
-        const message = "Amidst the intertwining paths of evolution and destiny, you find the rune resonating a song of unfulfilled potential. Its whispers speak of journeys untaken and bonds unformed. To comprehend its essence, you must first embrace the transformative odysseys of your own being and unite in symbiosis with the sentinel of solitude.";
+        const message = "在进化和命运交织的道路中，你会发现符文共鸣着一首未实现的潜力之歌。它的低语诉说着尚未解开的旅程和尚未形成的纽带。要理解它的本质，你必须首先拥抱你自己的变革之旅，并与孤独的哨兵共生。";
         displayOnChat(message);
     } else {
         // Player has the required upgrades
@@ -526,7 +526,7 @@ function unlockVisionEvolution() {
         // Hide the Solara tab
         document.getElementById("solaraTabButton").style.display = "none";
         // Display message for unlocking vision
-        const message = "As you gaze into the depths of the rune, a cascade of unseen colors floods your senses. In this moment of transcendental awakening, a new concept is born. Beyond perception, it's a communion with the cosmos, an understanding of the ethereal language of light. A new realm of possibilities unfolds, as the fabric of your existence weaves itself into the tapestry of a greater consciousness.";
+        const message = "当你凝视符文的深处时，一连串看不见的颜色淹没了你的感官。在这个超越性觉醒的时刻，一个新的概念诞生了。除了感知，它是与宇宙的交流，是对光的空灵语言的理解。一个新的可能性领域展开了，因为你的存在结构将自己编织成一个更大意识的织锦。";
         displayOnChat(message);
     }
 }

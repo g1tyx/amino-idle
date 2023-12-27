@@ -715,8 +715,14 @@ document.getElementById('analyze-all-anomalies').addEventListener('click', funct
         const anomalyType = progressBar.previousSibling.nodeValue.trim().split(':')[0].replace(' ', '_').toLowerCase();
         const count = decorationCounts[anomalyType] || 0;
         const totalAnomalies = decorations.filter(deco => deco.type === anomalyType).length;
-        const percentDiscovered = (count / totalAnomalies) * 100;
+        var percentDiscovered = (count / totalAnomalies) * 100;
+        console.log(percentDiscovered, '：percentDiscovered 1')
+        if(isNaN(percentDiscovered)){
+            percentDiscovered = 0
 
+        console.log(percentDiscovered, '：percentDiscovered 0')
+        }
+        console.log(percentDiscovered, '：percentDiscovered 2')
         // Logging the starting process for each progress bar
         console.log(`Starting animation for ${anomalyType}: Current value: ${progressBar.value}, Target: ${percentDiscovered}`);
 
