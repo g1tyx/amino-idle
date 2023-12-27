@@ -1323,18 +1323,7 @@ function createUniqueWiggleFilter(uniqueID) {
 
 // Base Resources Handler
 function updateResources() {
-    // Update nourishment
-    nourishment += (nourishmentRate + (nourishmentPerTendon * tendons) + (nourishmentPerSegment * cellsegments) + (nourishmentPerWorker * totalcellworkers)) * nourishmentMultiplier;
-    // Update information
-    information += (informationRate + (informationPerTendon * tendons) + (informationPerSegment * cellsegments) + (informationPerWorker * totalcellworkers)) * informationMultiplier;
-    // Update warmth
-    warmth += (warmthRate + (warmthPerTendon * tendons) + (warmthPerSegment * cellsegments) + (warmthPerWorker * totalcellworkers)) * warmthMultiplier;
-    //if (advancedTunnelingIIIResearchCompleted && terraformAssignedDiggers > 5) {
-    //    const warmthToConsume = 30 * (terraformAssignedDiggers - 5);
-    //    warmth = Math.max(0, warmth - warmthToConsume); // This will ensure warmth doesn't go below zero
-    //}
-    // Update energy
-    energy += (energyRate + (energyPerTendon * tendons) + (energyPerSegment * cellsegments)  + (energyPerWorker * totalcellworkers)) * energyMultiplier;
+    updateResourcesForOneCycle(); // Updates Nourishment/Information/Warmth/Energy
     // Update the individual counters directly instead of resetting the entire inner HTML of resourcesDisplay
     document.getElementById("nourishmentCounter").textContent = formatLargeNumber(nourishment);
     document.getElementById("informationCounter").textContent = formatLargeNumber(information);
@@ -1374,6 +1363,13 @@ function updateResources() {
     }
 }
 
+// Single regular resource cycle logic bits
+function updateResourcesForOneCycle() {
+    nourishment += (nourishmentRate + (nourishmentPerTendon * tendons) + (nourishmentPerSegment * cellsegments) + (nourishmentPerWorker * totalcellworkers)) * nourishmentMultiplier;
+    information += (informationRate + (informationPerTendon * tendons) + (informationPerSegment * cellsegments) + (informationPerWorker * totalcellworkers)) * informationMultiplier;
+    warmth += (warmthRate + (warmthPerTendon * tendons) + (warmthPerSegment * cellsegments) + (warmthPerWorker * totalcellworkers)) * warmthMultiplier;
+    energy += (energyRate + (energyPerTendon * tendons) + (energyPerSegment * cellsegments)  + (energyPerWorker * totalcellworkers)) * energyMultiplier;
+}
 
 // Terraform Resources Handler
 function terraformCycle() {
@@ -1457,6 +1453,30 @@ function terraformCycle() {
     }
 }
 
+
+function simulateTerraformCycle() {
+    // Simulate resource gain for biomites
+    if (Math.random() < 0.51) {
+        let gainAmount = biomitesRate * biomitesMultiplier;
+        biomites += gainAmount;
+    }
+    if (Math.random() < 0.46) {
+        let gainAmount = zymersRate * zymersMultiplier;  // 46% chance for zymers
+        zymers += gainAmount
+    }
+    if (Math.random() < 0.21) {
+        let gainAmount = fibersRate * fibersMultiplier;  // 21% chance for fibers
+        fibers += gainAmount
+    }
+    if (Math.random() < 0.19) {
+        let gainAmount = sludgeRate * sludgeMultiplier;  // 19% chance for sludge
+        sludge += gainAmount
+    }
+    if (Math.random() < 0.05) {
+        let gainAmount = algaeRate * algaeMultiplier;  // 5% chance for algae
+        algae += gainAmount
+    }
+}
 
 // As the function name implies, a quick manual once-off update for newly loaded save games
 function loadGameUpdateTerraformResourcesDisplay() {

@@ -907,6 +907,15 @@ function placeDecorations(svg, svgNS, terrainGrid, fungiTile) {
         let chosenRiver = potentialRiverPaths[Math.floor(Math.random() * potentialRiverPaths.length)];
         let riverDecorations = drawRiver(chosenRiver.x, chosenRiver.y, svg, svgNS, chosenRiver.direction);
         decorations.push(...riverDecorations);
+        // New Step: Remove river path tiles from availableLandPatches with verbose logging
+        let riverLength = (chosenRiver.direction === 'horizontal') ? 4 : 3;
+        for (let i = 0; i < riverLength; i++) {
+            let riverX = (chosenRiver.direction === 'horizontal') ? chosenRiver.x + i : chosenRiver.x;
+            let riverY = (chosenRiver.direction === 'vertical') ? chosenRiver.y + i : chosenRiver.y;
+            // Verbose logging
+            console.log(`River placed on coordinates: x=${riverX}, y=${riverY}. Removing these coordinates from availableLandPatches.`);
+            availableLandPatches = availableLandPatches.filter(patch => !(patch.x === riverX && patch.y === riverY));
+        }
     }
     // Step 4: Shuffle the availableLandPatches to randomize selection
     availableLandPatches.sort(() => Math.random() - 0.5);

@@ -58,11 +58,36 @@ function initializeWorldView() {
 
         makeWorldElementDraggable(document.getElementById('world'), [backgroundCanvas, cloud1Canvas, cloud2Canvas, wavesCanvas]);
 
+        if (cloud1Canvas) {
+            swayCloud1Canvas(document.getElementById('cloud1Canvas'));
+        }   
+
         initializeWorld = true;
     }
 }
 
+function swayCloud1Canvas(canvas, maxShift, swayInterval, restInterval) {
+    let currentShift = 0;
+    let maxSway = maxShift || 7; // Maximum pixels to sway to the right, defaults to 7
+    let direction = 1; // Start moving right
+    let swayActive = true;
 
+    const sway = setInterval(function() {
+        if (swayActive) {
+            if (currentShift >= maxSway) {
+                // Start moving back to the left
+                direction = -1;
+            } else if (currentShift <= 0) {
+                // Pause the sway, prepare to move right again after a rest
+                swayActive = false;
+                direction = 1;
+                setTimeout(() => swayActive = true, restInterval || 2000); // Rest for 2 seconds before swaying again
+            }
+            currentShift += direction;
+            canvas.style.transform = `translateX(${currentShift}px)`;
+        }
+    }, swayInterval || 200); // Move 1 pixel every 0.2 seconds by default
+}
 
 function loadAndDrawImage(src, ctx, x, y) {
     const img = new Image();

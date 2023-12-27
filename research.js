@@ -1965,7 +1965,7 @@ function createTerraformingResearchButton() {
         <br>
         <b>Effect:</b> Unlock the ability to terraform environments.
         <br>
-        <b>Requirement:</b> 9K information.
+        <b>Requirement:</b> 7.5K information.
         <br>
         <b>Leads to:</b>
           <ul style="margin-top: 5px; padding-left: 20px;">
@@ -2115,7 +2115,7 @@ function createChemotacticExplorationResearchButton() {
         <br>
         <b>Effect:</b> Enables automated exploration of the world. Automated exploring automatically enables when >50K energy resources are available. 
         <br>
-        <b>Requirement:</b> 12000 information.
+        <b>Requirement:</b> 12,000 information.
         <br>
         <b>Leads to:</b>
           <ul style="margin-top: 5px; padding-left: 20px;">
@@ -2139,7 +2139,7 @@ function createTendoGenesisResearchButton() {
         <br>
         <b>Effect:</b> Unlocks the potential for new tendons, weaving a tapestry of resilience and dexterity that will open up new avenues for growth and exploration.
         <br>
-        <b>Requirement:</b> 7000 information, 300 biomites, 30 sludge.
+        <b>Requirement:</b> 7,000 information, 300 biomites, 30 sludge.
         <br>
         <b>Leads to:</b>
           <ul style="margin-top: 5px; padding-left: 20px;">
