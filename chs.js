@@ -570,7 +570,7 @@ var cnItems = {
     "Every contribution, every word of support, is a step forward in this journey we share. Thank you for being a part of this world.": "每一次贡献、每一句支持，都是我们共同的旅程中向前迈出的一步。 感谢您成为这个世界的一部分。",
     "Welcome to the World View!": "欢迎来到世界观！",
     "World View": "世界视图",
-    "": "",
+    "PrimordialSight": "原始视觉",
     "": "",
     "": "",
     "": "",
