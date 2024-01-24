@@ -614,7 +614,7 @@ var cnItems = {
     "": "",
     "": "",
     "": "",
-    "Cells available:": "可用细胞：",
+    // "Cells available:": "可用细胞：",
     "Zymers:": "酶（z）：",
     "Warmth:": "温暖（w）：",
     "Sludge:": "污泥（s）：",
